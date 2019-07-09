@@ -1,0 +1,25 @@
+<view class="selection-departments">
+  <!-- 其他科室 -->
+  <view class="other">
+    <view>
+      <input placeholder="其他科室（自定义输入）" type="text" confirm-type="search"/>
+    </view>    
+  </view>
+  <!-- 其他科室 -->
+  <!-- 科室详情 -->
+  <view class="tab">
+    <scroll-view class="tab-left" scroll-y style="height:{{nomalHeight}}px">
+      <view class="{{normalIndex == idx ? 'active':''}}"  wx:for="{{departmentData}}" wx:key="index" data-index="{{idx}}" wx:for-index="idx" bindtap="tab">
+        {{item.departmentName}}
+      </view>
+    </scroll-view>
+    <scroll-view class="tab-right"  scroll-y style="height:{{nomalHeight}}px">
+      <view  wx:for="{{departmentData}}" wx:key="index" hidden="{{index != normalIndex}}">
+        <view wx:for="{{item.smallDepartment}}" wx:key="index">
+          {{item}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 科室详情 -->
+</view>

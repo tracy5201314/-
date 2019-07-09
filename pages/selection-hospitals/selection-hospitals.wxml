@@ -1,0 +1,21 @@
+<!--pages/selection-hospitals/selection-hospitals.wxml-->
+<view class="selection-hospitals">
+  <!-- 搜索 -->
+  <view class="search">
+    <text>重庆</text>
+    <view style="background-image: url('../../static/images/icon-search.png');">
+      <input placeholder="可搜索全国医院" type="text" confirm-type="search"/>
+    </view>
+  </view>
+  <!-- 搜索 -->
+  <!-- 其他科室 -->
+  <view class="other">
+    <input placeholder="其他科室（自定义输入）" type="text" confirm-type="search"/>
+  </view>
+  <!-- 其他科室 -->
+  <!-- 默认显示医院 -->
+  <view class="hospitals-normal">
+    <view class="hospitals-list" wx:for="{{hospitalsData}}" wx:key="index">{{item}}</view>
+  </view>
+  <!-- 默认显示医院 -->
+</view>

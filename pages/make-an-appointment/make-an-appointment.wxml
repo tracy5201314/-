@@ -1,0 +1,44 @@
+<!--pages/make-an-appointment/make-an-appointment.wxml-->
+<view class="make-an-appointment">
+  <view wx:for="{{hospital}}" class="tab" wx:for-item="hospital" wx:key="idx" wx:for-index="idx">
+    <!-- 挂号医院及科室 -->
+    <view class="tab-title {{hospital.toggleFlag ? '' : 'active'}}" bindtap="tabToggle" data-index="{{idx}}">
+      <view class="department">{{hospital.department}}</view>
+      <view>{{hospital.hospitalName}}</view>    
+    </view>
+    <!-- 挂号医院及科室 -->
+    <!-- 挂号医院科室详情 -->
+    <view class="tab-content" hidden="{{hospital.toggleFlag}}">
+      <!-- 挂号日期 -->
+      <view class="date">
+        <view wx:for="{{hospital.date}}" wx:key="index" class="{{ index==hospital.normalNum ? 'active':'' }}" bindtap="switchingData" data-index="{{index}}" data-parentIndex="{{idx}}" wx:for-item="date">
+          <view class="week">{{date.week}}</view>
+          <view class="specific-time">{{date.specificTime}}</view>
+        </view>
+      </view>
+      <!-- 挂号日期 -->
+      <!-- 号源情况 -->
+      <view class="sources-number">
+          <view wx:for="{{hospital.sourcesNumber}}" wx:key="index" class="sources-number-item" wx:for-item="sourcesNumber" hidden="{{index != hospital.normalNum}}">
+            <!-- 无号源 -->
+            <view class="default" wx:if="{{sourcesNumber.details.length == 0}}">
+              <image heigth src="../../static/images/default.png"></image>
+              <text>今日暂无排班情况</text>
+            </view>
+            <!-- 无号源 -->
+            <!-- 号源 -->
+            <view  class="sources-number-list" wx:else>
+              <view wx:for="{{sourcesNumber.details}}" wx:key="index" class="sources-number-list-item" wx:for-item="details">
+                <view class="time-slot">{{details.timeSlot}}</view>
+                <view class="price">{{details.price}}</view>
+                <navigator url="" class="surplus-num {{ details.surplusNum==0 ? 'disabled':'' }}">余{{details.surplusNum}}号</navigator>
+              </view>                
+            </view>
+            <!-- 号源 -->
+          </view>
+      </view> 
+      <!-- 号源情况 -->
+    </view>
+    <!-- 挂号医院科室详情 -->
+  </view>
+</view>

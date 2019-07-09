@@ -1,0 +1,91 @@
+page{
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.selection-hospitals{
+  padding-top: 20rpx;  
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 50rpx;
+  height: 88rpx;
+  background-color: #fff;
+}
+.search text{
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0px;
+	color: #1e7df7;
+}
+.search view{
+  flex: 1;  
+  margin-left: 21rpx;
+	height: 70rpx;  
+  background-position: 22rpx center;
+  background-repeat: no-repeat;
+  background-size: 38rpx 38rpx;
+	background-color: #f7f7f7;
+	border-radius: 35rpx;
+}
+.search input{
+  padding: 0 0 0 74rpx;
+  height: 100%;
+}
+
+.other{
+  display: flex;
+  align-items: center;
+  padding: 0 50rpx;
+  margin: 22rpx 0 20rpx;
+  height: 88rpx;  
+	background-color: #ffffff;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.other input{
+  flex: 1;
+  height: 80rpx;
+  position: relative;
+}
+.other input::after,.other input::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 0;
+  z-index: 10;
+  width: 0;
+  height: 0;
+}
+.other input::after{
+  border: 16rpx solid transparent;
+  border-left: 14rpx solid #999;
+}
+.other input::before{
+  right: 4rpx;
+  z-index: 11;
+  border: 16rpx solid transparent;
+  border-left: 14rpx solid #fff;
+}
+
+.hospitals-list{
+  padding: 0 0 0 50rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #f7f7f7;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 100rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}

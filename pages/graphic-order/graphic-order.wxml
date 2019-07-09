@@ -1,0 +1,97 @@
+<view class="order">
+  <!-- 订单顶部 -->
+  <view class="order-title">
+    <navigator url="">挂号订单</navigator>
+    <navigator class="active" url="">图文订单</navigator>
+    <navigator url="">电话订单</navigator>
+    <navigator url="">处方订单</navigator>
+  </view>
+  <!-- 订单顶部 -->
+  <!-- 图文订单列表 -->
+  <view class="order-list">
+    <view class="order-list-content">
+      <view class="tips">最近30天挂号订单</view>
+      <view class="order-list-item">
+        <!-- 服务剩余时间 -->
+        <view class="time">距离服务结束还剩：<text>20</text>小时<text>20</text>分钟</view>
+        <!-- 服务剩余时间 -->
+        <!-- 服务内容 -->
+        <view class="text">病历主诉内容病历主诉内容病历主诉内容病历主诉内容病历主诉内容</view>
+        <!-- 服务内容 -->
+        <!-- 病人信息及跳转或按钮 -->
+        <view class="msg">
+          <view>
+            <text>下单时间：2019.6.13 13:00</text>
+            <text>就诊人：王英杰  女  25岁</text>
+          </view>
+          <navigator class="btn">咨询</navigator>
+        </view>
+        <!-- 病人信息及跳转或按钮 -->
+        <!-- 标签 -->
+        <view class="sign">进行中</view>
+        <!-- 标签 -->
+      </view>
+      <view class="order-list-item">
+        <!-- 服务剩余时间 -->
+        <view class="time">距离服务结束还剩：<text>-</text>小时<text>-</text>分钟</view>
+        <!-- 服务剩余时间 -->
+        <!-- 服务内容 -->
+        <view class="text">病历主诉内容病历主诉内容病历主诉内容病历主诉内容病历主诉内容</view>
+        <!-- 服务内容 -->
+        <!-- 病人信息及跳转或按钮 -->
+        <view class="msg">
+          <view>
+            <text>下单时间：2019.6.13 13:00</text>
+            <text>就诊人：王英杰  女  25岁</text>
+          </view>
+          <navigator class="btn">咨询</navigator>
+        </view>
+        <!-- 病人信息及跳转或按钮 -->
+        <!-- 标签 -->
+        <view class="sign">进行中</view>
+        <!-- 标签 -->
+      </view>
+      <view class="order-list-item">
+        <!-- 服务剩余时间 -->
+        <view class="time">距离服务结束还剩：<text>0</text>小时<text>0</text>分钟</view>
+        <!-- 服务剩余时间 -->
+        <!-- 服务内容 -->
+        <view class="text">病历主诉内容病历主诉内容病历主诉内容病历主诉内容病历主诉内容</view>
+        <!-- 服务内容 -->
+        <!-- 病人信息及跳转或按钮 -->
+        <view class="msg">
+          <view>
+            <text>下单时间：2019.6.13 13:00</text>
+            <text>就诊人：王英杰  女  25岁</text>
+          </view>
+          <navigator class="btn disabled">咨询</navigator>
+        </view>
+        <!-- 病人信息及跳转或按钮 -->
+        <!-- 标签 -->
+        <view class="sign disabled">已结束</view>
+        <!-- 标签 -->
+      </view>
+      <view class="order-list-item">
+        <!-- 服务剩余时间 -->
+        <view class="time">距离服务结束还剩：<text>-</text>小时<text>-</text>分钟</view>
+        <!-- 服务剩余时间 -->
+        <!-- 服务内容 -->
+        <view class="text">病历主诉内容病历主诉内容病历主诉内容病历主诉内容病历主诉内容</view>
+        <!-- 服务内容 -->
+        <!-- 病人信息及跳转或按钮 -->
+        <view class="msg">
+          <view>
+            <text>下单时间：2019.6.13 13:00</text>
+            <text>就诊人：王英杰  女  25岁</text>
+          </view>
+          <navigator class="btn disabled">咨询</navigator>
+        </view>
+        <!-- 病人信息及跳转或按钮 -->
+        <!-- 标签 -->
+        <view class="sign disabled">已取消</view>
+        <!-- 标签 -->
+      </view>                  
+    </view>
+  </view>
+  <!-- 图文订单列表 -->
+</view>

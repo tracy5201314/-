@@ -1,0 +1,131 @@
+page{
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.order-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 100rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 100rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.order-title .active{
+  position: relative;
+  color: #1e7df7;
+}
+.order-title .active::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0rpx;
+  transform: translate(-50%,0);
+  width: 40rpx;
+	height: 4rpx;
+	background-color: #1e7df7;
+}
+
+.order-list{
+  padding: 30rpx;
+}
+.order-list-content{
+  padding: 35rpx 20rpx;
+  background-color: #fff;
+  border-radius: 14rpx;
+}
+.tips{
+  font-size: 32rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.order-list-item{
+  position: relative;
+  padding: 30rpx 20rpx;
+  margin-top: 28rpx;
+	background-color: #f7f7f7;
+	border-radius: 14rpx;
+  overflow: hidden;
+}
+.order-list-item .time{
+  font-size: 34rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.order-list-item .time text{
+  color: #ff9e2b;
+}
+.order-list-item .text{
+  margin: 16rpx 0 48rpx;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.order-list-item .msg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order-list-item .msg .btn{
+  width: 150rpx;
+	height: 60rpx;
+	border-radius: 30rpx;
+	border: solid 2rpx #ff5e1f;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 60rpx;
+	letter-spacing: 0rpx;
+	color: #fd6d49;
+  text-align: center;
+}
+.order-list-item .msg .btn.disabled{
+  border-color: #999;
+  color: #999;
+}
+.order-list-item .msg view{
+  margin-top: -7rpx;
+}
+.order-list-item .msg text{
+  display: block;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.order-list-item .sign{
+  position: absolute;
+  right:-28rpx;
+  top: 4rpx;
+  padding-left: 10rpx;
+  width: 110rpx;
+  height: 40rpx;
+  background-color: #ff9e2b;
+  transform: rotate(39deg);
+  font-size: 18rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+  text-align: center;
+}
+.order-list-item .sign.disabled{
+  background-color: #bbbbbb;
+}

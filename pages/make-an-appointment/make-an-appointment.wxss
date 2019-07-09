@@ -1,0 +1,151 @@
+.make-an-appointment{
+  background-color: #fff;
+}
+.tab{
+
+}
+.tab-title{
+  position: relative;
+  padding: 36rpx 0 29rpx;
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0;
+	color: #666666;
+}
+.tab-title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  transform:translate(0,-50%); 
+  width: 0;
+  height: 0;
+  border: 18rpx solid transparent;
+  border-top: 16rpx solid #000;
+}
+.tab-title::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 11;
+  transform:translate(0,-54%); 
+  width: 0;
+  height: 0;
+  border: 18rpx solid transparent;
+  border-top: 16rpx solid #fff;
+}
+.tab-title .department{
+  margin: 0 0 24rpx;
+  font-size: 42rpx;
+  color: #333333;
+  font-weight: 700;
+}
+.tab-title.active::after{
+  border-top: 18rpx solid transparent;
+  border-bottom: 16rpx solid #000;
+}
+.tab-title.active::before{
+  transform:translate(0,-46%);
+  border-top: 18rpx solid transparent;
+  border-bottom: 16rpx solid #fff;
+}
+.tab-content .date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34rpx 30rpx 30rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  text-align: center;
+}
+.specific-time{
+  margin-top: 14rpx;
+  font-size: 32rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.tab-content .active .week,.tab-content .active .specific-time{
+  color: #1e7df7;
+}
+
+.sources-number-item .default{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650rpx;
+  background-color: #f7f7f7;
+}
+
+.sources-number-item .default image{
+  width: 173rpx;
+  height: 208rpx;
+}
+.sources-number-item .default text{
+  margin-top: 26rpx;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #999999;
+}
+.sources-number-list{
+  margin: 0 30rpx;
+}
+.sources-number-list-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: solid 1px #eeeeee;
+}
+.sources-number-list-item .time-slot{
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.sources-number-list-item .price{
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #fd6d49;
+}
+.sources-number-list-item .surplus-num{
+  width: 124rpx;
+	height: 50rpx;
+	border-radius: 8rpx;
+	border: solid 2rpx #1e7df7;  
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50rpx;
+	letter-spacing: 0rpx;
+	color: #1e7df7;
+  text-align: center;
+}
+.sources-number-list-item .surplus-num.disabled{
+  border-color: #bbbbbb;
+  color: #bbbbbb;  
+}
