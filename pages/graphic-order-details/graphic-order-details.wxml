@@ -1,0 +1,69 @@
+<!-- 图文订单详情 -->
+<view class="graphic-order-details">
+  <!-- 订单信息 -->
+  <view class="order-msg">
+    <!-- 状态 -->
+    <view class="state">
+      <view>订单状态<text>正在进行中…</text></view>
+    </view>
+    <!-- 状态 -->
+    <!-- 信息 -->
+    <view class="msg">
+      <view class="msg-item">
+        <view class="msg-name">下单时间</view>
+        <view class="msg-text">2018.6.13  08:30</view>
+      </view>
+      <view class="msg-item">
+        <view class="msg-name">开始时间</view>
+        <view class="msg-text">2018.6.13  19:30 <text>(医生首次回复时间)</text></view>
+      </view>
+      <view class="msg-item">
+        <view class="msg-name">就诊人</view>
+        <view class="msg-text">张莎莎</view>
+      </view>
+      <view class="msg-item">
+        <view class="msg-name">身份证号</view>
+        <view class="msg-text">500231199812245261</view>
+      </view>
+      <view class="msg-item">
+        <view class="msg-name">联系电话</view>
+        <view class="msg-text">15023360582</view>
+      </view>
+    </view>
+    <!-- 信息 -->
+  </view>
+  <!-- 订单信息 -->
+  <!-- 病情描述 -->
+  <view class="illness-describe">
+    <view class="title">病情描述</view>
+    <text>感冒咳嗽一周了，喉咙肿痛，头痛发烧流鼻涕，吃了药没好。</text>
+  </view>
+  <!-- 病情描述 -->
+  <!-- 商品描述 -->
+  <view class="goods-describe">
+    <view class="goods-describe-item">
+      <view>商品名称</view>
+      <view class="color-333">图文咨询</view>
+    </view>
+    <view class="goods-describe-item">
+      <view>购买单价</view>
+      <view>￥50/次</view>
+    </view>
+    <view class="goods-describe-item">
+      <view>折扣</view>
+      <view>9折</view>
+    </view>
+    <view class="goods-describe-item">
+      <view>订单总价</view>
+      <view class="font-bold">￥45.00</view>
+    </view>
+  </view>
+  <!-- 商品描述 -->
+  <!-- 按钮 -->
+  <view class="btn">
+    <navigator class="btn1">处方记录</navigator>
+    <navigator class="btn2">立即咨询</navigator>
+  </view>
+  <!-- 按钮 -->
+</view>
+<!-- 图文订单详情 -->

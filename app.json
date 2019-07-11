@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/graphic-order-details/graphic-order-details",
     "pages/graphic-order/graphic-order",
     "pages/selection-departments/selection-departments",
     "pages/selection-hospitals/selection-hospitals",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/make-an-appointment/make-an-appointment"    
+    "pages/make-an-appointment/make-an-appointment"
   ],
   "window": {
     "backgroundTextStyle": "light",
