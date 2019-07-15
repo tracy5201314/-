@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/graphic-consultation/graphic-consultation",
     "pages/graphic-order-details/graphic-order-details",
     "pages/graphic-order/graphic-order",
     "pages/selection-departments/selection-departments",
