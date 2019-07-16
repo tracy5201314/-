@@ -1,0 +1,71 @@
+<view class="order" style="height:100%">
+  <!-- 有订单 -->
+  <view style="display:none">
+    <!-- 订单顶部 -->
+    <view class="order-title">
+      <navigator url="">挂号订单</navigator>
+      <navigator url="../graphic-order/graphic-order">图文订单</navigator>
+      <navigator class="active" url="">电话订单</navigator>
+      <navigator url="">处方订单</navigator>
+    </view>
+    <!-- 订单顶部 -->
+    <!-- 电话订单列表 -->
+    <view class="order-list">
+      <view class="order-list-content">
+        <view class="tips">最近30天挂号订单</view>
+        <view class="order-list-details" style="height:{{height}}rpx">
+          <view class="order-list-item">
+            <view class="time">剩余通话时间：<text>20</text>小时<text>20</text>分钟</view>
+            <view class="msg">
+              <text>王英杰  女  25岁</text>
+              <button>电话咨询</button>
+            </view>
+          </view>
+          <view class="order-list-item">
+            <view class="time">剩余通话时间：<text>0</text>分钟</view>
+            <view class="msg">
+              <text>王英杰  女  25岁</text>
+              <button class="disabled">电话咨询</button>
+            </view>
+          </view>
+          <view class="order-list-item">
+            <view class="time">剩余通话时间：<text>20</text>分钟</view>
+            <view class="msg">
+              <text>王英杰  女  25岁</text>
+              <button>电话咨询</button>
+            </view>
+          </view>
+          <view class="order-list-item">
+            <view class="time">剩余通话时间：<text>3</text>分钟</view>
+            <view class="msg">
+              <text>王英杰  女  25岁</text>
+              <button>电话咨询</button>
+            </view>
+          </view>  
+          <view class="order-list-item">
+            <view class="time">剩余通话时间：<text>3</text>分钟</view>
+            <view class="msg">
+              <text>王英杰  女  25岁</text>
+              <button>电话咨询</button>
+            </view>
+          </view>               
+        </view>                 
+      </view>
+    </view>
+    <!-- 电话订单列表 -->
+    <!-- 加载全部按钮 -->
+    <view class="more" hidden="{{flag}}">
+      <view bindtap="expendAll"><text class="left-arrow">加载全部</text></view>
+    </view>
+    <!-- 加载全部按钮 -->
+  </view>
+  <!-- 有订单 -->
+  <!-- 缺省 -->
+  <view class="order-no">
+    <image src="../../static/images/telephone-order-no.png" />
+    <text>暂无记录</text>
+    <view>最近一个月无预约记录</view>
+    <button>查看更早订单</button>
+  </view>
+  <!-- 缺省 -->
+</view>

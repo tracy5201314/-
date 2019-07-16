@@ -47,13 +47,18 @@ page{
 	letter-spacing: 0rpx;
 	color: #333333;
 }
+.order-list-details{
+  margin-top: 30rpx;
+  overflow: hidden;
+}
 .order-list-item{
-  position: relative;
-  padding: 30rpx 20rpx;
-  margin-top: 28rpx;
+  padding: 30rpx 22rpx;
+  margin-top: 30rpx;
 	background-color: #f7f7f7;
 	border-radius: 14rpx;
-  overflow: hidden;
+}
+.order-list-item:first-child{
+  margin-top: 0;
 }
 .order-list-item .time{
   font-size: 34rpx;
@@ -66,68 +71,38 @@ page{
 .order-list-item .time text{
   color: #ff9e2b;
 }
-.order-list-item .text{
-  margin: 16rpx 0 48rpx;
-  font-size: 28rpx;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 42rpx;
-	letter-spacing: 0rpx;
-	color: #666666;
-}
 .order-list-item .msg{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 24rpx;
+  height: 60rpx;
 }
-.order-list-item .msg .btn{
+.order-list-item .msg button{
+  margin: 0;
+  padding: 0;
   width: 150rpx;
 	height: 60rpx;
 	border-radius: 30rpx;
-	border: solid 2rpx #ff5e1f;
+	border: solid 1rpx #ff5e1f;
   font-size: 28rpx;
-	font-weight: normal;
+	font-weight: 400;
 	font-stretch: normal;
 	line-height: 60rpx;
 	letter-spacing: 0rpx;
 	color: #fd6d49;
-  text-align: center;
 }
-.order-list-item .msg .btn.disabled{
+.order-list-item .msg .disabled{
   border-color: #999;
   color: #999;
 }
-.order-list-item .msg view{
-  margin-top: -7rpx;
-}
 .order-list-item .msg text{
-  display: block;
   font-size: 28rpx;
-	font-weight: normal;
+	font-weight: 400;
 	font-stretch: normal;
-	line-height: 42rpx;
+	line-height: 60rpx;
 	letter-spacing: 0rpx;
 	color: #666666;
-}
-.order-list-item .sign{
-  position: absolute;
-  right:-28rpx;
-  top: 4rpx;
-  padding-left: 10rpx;
-  width: 110rpx;
-  height: 40rpx;
-  background-color: #ff9e2b;
-  transform: rotate(39deg);
-  font-size: 18rpx;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 40rpx;
-	letter-spacing: 0rpx;
-	color: #ffffff;
-  text-align: center;
-}
-.order-list-item .sign.disabled{
-  background-color: #bbbbbb;
 }
 
 .more{
@@ -174,4 +149,51 @@ page{
 .left-arrow:after{
   right: -6px; /*覆盖并错开1px*/
   border-left: 7px #fff solid;
+}
+
+
+.order-no{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+}
+.order-no image{
+  width: 320rpx;
+  height: 240rpx;
+}
+.order-no text{
+  margin-top: 40rpx;
+  font-size: 42rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.order-no view{
+  margin: 28rpx 0 40rpx;
+  font-size: 24rpx;
+	font-weight: 400;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #999999;
+}
+.order-no button{
+  margin: 0;
+  padding: 0;
+  width: 288rpx;
+	height: 82rpx;
+	background-image: linear-gradient(-90deg, #3b71ff 0%, #51a3ff 100%);
+	box-shadow: 0rpx 3rpx 24rpx 0rpx rgba(60, 114, 255, 0.36);
+	border-radius: 41rpx;
+  font-size: 30rpx;
+	font-weight: 400;
+	font-stretch: normal;
+	line-height: 82rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
 }

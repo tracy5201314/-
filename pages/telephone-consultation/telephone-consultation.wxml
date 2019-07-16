@@ -5,7 +5,6 @@
     <view class="title">服务介绍</view>
     <text>文字、图片、语言方式进行咨询；</text>
     <text>48小时内不限次数咨询，时间到期自动结束；</text>
-    <text>购买服务后，若24小时内医生未回复，支付费用将自动退回给对应支付账户。</text>
     <view class="title ft-28">适用患者：</view>
     <text>不方便到医就诊的复诊患者；</text>
     <text>问题不紧急，对回复速度要求不太的患者</text>    
@@ -17,25 +16,40 @@
       <view class="patient-name" bindtap="openAddPatient">
         <text>就诊人（必选）</text>
         <text class="left-arrow">{{array[index]}}</text>
-      </view>    
-      <view class="illness-state">
-        <textarea placeholder="请详情描述您的病情症状、曾经做过的检查、用药情况、目前病情是否加重还是缓解，想要获得医生的什么帮助。" class="textarea" placeholder-class="textarea"></textarea>
-        <text>(至少输入10个汉字)</text>
       </view>
-      <view class="illness-img">
-        <view class="illness-img-content">
-          <view wx:for="{{imgPath}}" wx:key="index" class="img {{ index !=2 ? '' : 'mr-0'}}">
-            <image src="{{item}}" />
-            <button data-index="{{index}}" bindtap="deleteImg" class="btn-cancel"></button>            
+      <view class="time-slot">
+        <view>可拨打时间段</view>
+        <scroll-view class="time-slot" scroll-x="true">
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
           </view>
-          <button hidden="{{flag}}" bindtap="chooseImg" class="btn-file"></button>
-        </view>
-        <view class="illness-img-tips">检查单、CT、病历、患处等图片，仅自己和医生可见，可上传3张</view>
-      </view>
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+        </scroll-view>
+      </view>    
     </view>
     <!-- 就诊人信息 -->
     <!-- 价格 -->
     <view class="price">
+      <view class="price-item">
+        <text>购买分钟数</text>
+        <view class="addNum">
+          <button>-</button>
+          <text></text>
+          <button>+</button>
+        </view>
+      </view>
       <view class="price-item">
         <text>价格</text>
         <text class="color">￥50/次</text>
@@ -51,6 +65,11 @@
       </view>
     </view>
     <!-- 价格 -->
+    <!-- 注意事项 -->
+    <view class="note">
+      <checkbox /><text>我已经阅读</text><navigator>《注意事项》</navigator>
+    </view>
+    <!-- 注意事项 -->
     <!-- 按钮 -->
     <view class="btn">
       <button form-type="submit">立即支付</button>
