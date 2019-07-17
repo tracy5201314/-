@@ -1,4 +1,4 @@
-<!-- 图文咨询 -->
+<!-- 电话咨询 -->
 <view class="graphic-consultation">
   <!-- 服务介绍 -->
   <view class="service-intro">
@@ -18,23 +18,31 @@
         <text class="left-arrow">{{array[index]}}</text>
       </view>
       <view class="time-slot">
-        <view>可拨打时间段</view>
-        <scroll-view class="time-slot" scroll-x="true">
-          <view>
-            <text>周一</text>
-            <text>2018.06.24</text>
+        <view class="time-slot-text">可拨打时间段</view>
+        <scroll-view class="time-slot-list" scroll-x="true" enable-flex="true">
+          <view class="time-slot-list-item">
+            <view>
+              <text>周一</text>
+              <text>2018.06.24</text>
+            </view>
           </view>
-          <view>
-            <text>周一</text>
-            <text>2018.06.24</text>
+          <view class="time-slot-list-item">
+            <view>
+              <text>周一</text>
+              <text>2018.06.24</text>
+            </view>
           </view>
-          <view>
-            <text>周一</text>
-            <text>2018.06.24</text>
+          <view class="time-slot-list-item">
+            <view>
+              <text>周一</text>
+              <text>2018.06.24</text>
+            </view>
           </view>
-          <view>
-            <text>周一</text>
-            <text>2018.06.24</text>
+          <view class="time-slot-list-item">
+            <view>
+              <text>周一</text>
+              <text>2018.06.24</text>
+            </view>
           </view>
         </scroll-view>
       </view>    
@@ -44,10 +52,10 @@
     <view class="price">
       <view class="price-item">
         <text>购买分钟数</text>
-        <view class="addNum">
-          <button>-</button>
-          <text></text>
-          <button>+</button>
+        <view class="add-num">
+          <button bindtap="reductionNum" class="reduction"></button>
+          <text>{{timeNum}}</text>
+          <button bindtap="addNum" class="add"></button>
         </view>
       </view>
       <view class="price-item">
@@ -67,7 +75,11 @@
     <!-- 价格 -->
     <!-- 注意事项 -->
     <view class="note">
-      <checkbox /><text>我已经阅读</text><navigator>《注意事项》</navigator>
+      <label>
+        <checkbox />
+        <text>我已经阅读</text>        
+      </label>
+      <navigator>《注意事项》</navigator>
     </view>
     <!-- 注意事项 -->
     <!-- 按钮 -->
@@ -77,7 +89,7 @@
     <!-- 按钮 -->
   </form>
 </view>
-<!-- 图文咨询 -->
+<!-- 电话咨询 -->
 <!-- 添加就诊人 -->
 <view class="add-patient" hidden="{{addFlag}}">
   <view class="add-patient-content">

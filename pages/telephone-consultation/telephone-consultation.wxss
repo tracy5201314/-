@@ -93,9 +93,6 @@ page{
   border-left: 8px #fff solid;
 }
 
-
-
-
 .price{
   margin-top: 30rpx;
   padding: 0 24rpx;
@@ -143,17 +140,17 @@ page{
   content: "";
   position: absolute;
   top: 50%;
-  right: -18rpx;
+  right: -10px;
   transform: translate(0,-50%);
   width: 0;
   height: 0;
-  border: 8rpx solid transparent;
-  border-left: 10rpx solid #fd6d49;
+  border: 5px solid transparent;
+  border-left: 5px solid #fd6d49;
 }
 
 .btn{
-  margin-top: 90rpx;
-  padding-bottom: 134rpx;
+  margin-top: 58rpx;
+  padding-bottom: 82rpx;
 }
 .btn button{
   height: 100rpx;
@@ -232,4 +229,166 @@ page{
 	font-stretch: normal;
 	letter-spacing: 0rpx;
 	color: #000000;
+}
+
+.note{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60rpx;
+  font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+.note navigator{
+  color: #1e7df7;
+}
+.note label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-num{
+  display: flex;
+  flex-direction: row;
+  width: 118rpx;
+  height: 32rpx;
+  border: 1rpx solid #999;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+}
+.add-num button{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 31rpx;
+  height: 30rpx;
+  background-color: transparent;
+  border-radius: 0;
+}
+.add-num button::after{
+  border: none;
+}
+.add-num .button-hover{
+  color: transparent;
+}
+.add-num .reduction{
+  border-right: 1rpx solid #999;
+}
+.add-num .reduction::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 17rpx;
+	height: 3rpx;
+	background-color: #666;
+  opacity: 1;
+}
+.add-num .add{
+  border-left: 1rpx solid #999;
+}
+.add-num .add::before,.add-num .add::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	background-color: #666;
+  opacity: 1;
+}
+.add-num .add::before{
+  width: 17rpx;
+	height: 3rpx;
+}
+.add-num .add::after{
+  width: 3rpx;
+	height: 17rpx;
+}
+.add-num text{
+  flex: 1;
+  font-size: 28rpx;
+	font-weight: 400;
+	font-stretch: normal;
+	line-height: 32rpx;
+	letter-spacing: 0rpx;
+	color: #999999;
+  text-align: center;
+}
+
+.time-slot{
+  padding-bottom: 40rpx;
+  width: 100%;
+  border-top: 1rpx solid #eee;
+}
+.time-slot .time-slot-text{
+  padding: 38rpx 0;
+  font-size: 32rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.time-slot .time-slot-list{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 106rpx;
+}
+.time-slot-list .time-slot-list-item{
+  margin-right: 18rpx;
+  padding: 0 7rpx;
+  height: 106rpx;
+  background-color: #f7f7f7;
+	border-radius: 8rpx;
+  text-align: center;
+  line-height: 106rpx;
+}
+.time-slot-list .time-slot-list-item view{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 36rpx;
+}
+.time-slot-list .time-slot-list-item text{
+  font-size: 32rpx;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  text-align: center;
+}
+.time-slot-list .time-slot-list-item text:first-child{
+  font-size: 26rpx;
+  color: #999;
+}
+
+
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 背景的宽 */
+   height: 40rpx; /* 背景的高 */
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border-color: #1e7df7;
+	background: #1e7df7;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
 }

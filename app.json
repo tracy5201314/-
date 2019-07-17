@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/service-purchase-success/service-purchase-success",
+    "pages/telephone-consultation-details/telephone-consultation-details",
     "pages/telephone-consultation/telephone-consultation",
     "pages/telephone-orders/telephone-orders",
     "pages/graphic-order/graphic-order",
@@ -9,7 +11,7 @@
     "pages/selection-hospitals/selection-hospitals",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/make-an-appointment/make-an-appointment"
+    "pages/make-an-appointment/make-an-appointment"    
   ],
   "window": {
     "backgroundTextStyle": "light",

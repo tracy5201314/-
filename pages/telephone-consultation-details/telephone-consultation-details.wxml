@@ -1,0 +1,83 @@
+<!-- 电话咨询详情 -->
+<view class="graphic-consultation">
+  <!-- 就诊人信息 --> 
+  <view class="patient-msg">
+    <view class="patient-name" bindtap="openAddPatient">
+      <text>就诊人（必选）</text>
+      <text class="left-arrow">{{array[index]}}</text>
+    </view>
+    <view class="time-slot">
+      <view class="time-slot-text">可拨打时间段</view>
+      <scroll-view class="time-slot-list" scroll-x="true" enable-flex="true">
+        <view class="time-slot-list-item">
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+        </view>
+        <view class="time-slot-list-item">
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+        </view>
+        <view class="time-slot-list-item">
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+        </view>
+        <view class="time-slot-list-item">
+          <view>
+            <text>周一</text>
+            <text>2018.06.24</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>    
+  </view>
+  <!-- 就诊人信息 -->
+  <!-- 时间 -->
+  <view class="time">
+    <view>剩余分钟数：<text>20</text>分钟</view>
+    <view>购买分钟数：<text>40</text>分钟</view>
+  </view>
+  <!-- 时间 -->
+  <!-- 通话记录 -->
+  <view class="call-records">
+    <view class="title">通话记录</view>
+    <view class="list">
+      <block wx:for="{{callRecordsData}}" wx:key="{{index}}">
+        <view class="list-item">
+          <text class="accurate-time">{{item.accurateTime}}</text>
+          <text class="duration">通话<text>{{item.duration}}</text>分钟</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 通话记录 -->
+  <!-- 按钮 -->
+  <view class="btn">
+    <button>再次购买</button>
+    <button>拨打电话</button>
+  </view>
+  <!-- 按钮 -->
+</view>
+<!-- 电话咨询详情 -->
+<!-- 添加就诊人 -->
+<view class="add-patient" hidden="{{addFlag}}">
+  <view class="add-patient-content">
+    <view class="title">
+      <button data-index="{{index}}" bindtap="closeAddPatient" class="cancel-btn">取消</button>
+      <text>请选择</text>
+      <button bindtap="sureAddPatient" class="sure-btn">确定</button>
+    </view>
+    <picker-view indicator-style="height: 40px;" style="width: 100%; height: 200px;background-color:#fff" value="{{value}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{array}}" wx:key="{{index}}" style="line-height: 40px;text-align:center">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+    <navigator>添加就诊人</navigator>
+  </view>
+</view>
+<!-- 添加就诊人 -->

@@ -1,4 +1,4 @@
-// pages/graphic-consultation/telephone-consultation.js
+// pages/telephone-consultation-details/telephone-consultation-details.js
 Page({
 
   /**
@@ -10,16 +10,20 @@ Page({
     index: 0,
     addFlag: true,
     value: [0],
-    timeNum:1,
-    toView: 'red',
-    scrollTop: 100
+    callRecordsData:[
+      { "accurateTime": "2018.03.22  12:02:11","duration":1},
+      { "accurateTime": "2018.03.25  14:02:11", "duration": 5 },
+      { "accurateTime": "2018.04.22  16:02:20", "duration": 10 },
+      { "accurateTime": "2018.08.22  08:02:11", "duration": 12 },
+      { "accurateTime": "2018.09.15  15:08:11", "duration": 13 },
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(this.data.callRecordsData)
   },
 
   /**
@@ -70,24 +74,6 @@ Page({
   onShareAppMessage: function () {
 
   },
-  formSubmit: function (e) {
-    console.log(this.data.imgPath)
-  },
-  /**
-   * 显示提示弹窗
-  */
-  tipsPopup: function () {
-    wx.showModal({
-      title: '说明',
-      content: '定向用户折扣实则为医生向其患者发放的福利，成为医生的患者可享受购买特殊折扣。请通过诊后报到等方式成为医生的患者。',
-      showCancel: false,
-      confirmText: "知道了",
-      confirmColor: "#1e7df7",
-      success(res) {
-        console.log(res);
-      }
-    })
-  },
   /**
    * 就诊人选择弹窗
    *  closeAddPatient 关闭弹窗
@@ -124,26 +110,5 @@ Page({
         })
       },
     })
-  },
-  /**
-   * 分钟数增减
-  */
-  addNum:function(){
-    let num = ++this.data.timeNum;
-    this.setData({
-      timeNum:num
-    })
-  },
-  reductionNum:function(){
-    let num = --this.data.timeNum;
-    if(num <= 1){
-      this.setData({
-        timeNum:1
-      })
-    }else{
-      this.setData({
-        timeNum: num
-      })
-    }    
   }
 })
