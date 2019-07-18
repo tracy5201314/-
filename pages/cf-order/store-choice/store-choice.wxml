@@ -1,0 +1,61 @@
+<view class='store-choice'> 
+  <view class='store-choice-hd'>
+    <text class='store-choice-hd-title'>默认</text>
+    <view class='store-choice-hd-text'>
+      <text>附近的店</text>
+    </view>
+  </view>
+  <view class='store-choice-bd mt-size'>
+    <view class='store-choice-mbox'>
+      <view class='store-item'>
+        <view class='store-item-title'>附近门店一</view>
+        <view class='store-item-mbox'>
+          <view class='store-item-name'>科园一路鑫斛药妆</view>
+          <view class='store-item-address'>重庆市九龙坡科园一路23号（火炬大厦斜对面）。</view>
+          <view class='store-item-phonenum'>
+            <text>联系电话：</text>
+            <text>15023300000</text>
+          </view>
+          <view class='store-item-time'>
+            <text>可提货时间：</text>
+            <text>08:00-22:00</text>
+          </view>
+        </view>
+      </view>
+      <view class='store-item'>
+        <view class='store-item-title'>附近门店一</view>
+        <view class='store-item-mbox'>
+          <view class='store-item-name'>科园一路鑫斛药妆</view>
+          <view class='store-item-address'>重庆市九龙坡科园一路23号（火炬大厦斜对面）。</view>
+          <view class='store-item-phonenum'>
+            <text>联系电话：</text>
+            <text>15023300000</text>
+          </view>
+          <view class='store-item-time'>
+            <text>可提货时间：</text>
+            <text>08:00-22:00</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<!-- 提示弹窗 -->
+<view class="pub-dialog {{ showBool ? 'pub-dialog-show':'' }}">
+  <view class="pub-dialog-mask" bindtap="toggleDialog" />
+  <view class="pub-dialog-mbox">
+    <view class='pub-dialog-title'>提示</view>
+    <view class='pub-dialog-cont'>
+      <view class='pub-dialog-text'>医事通想获取您当前的位置？</view>
+    </view>
+    <view class='pub-dialog-btnbox'>
+      <view class='pub-dialog-item' bindtap="handelRefuse">
+        <text>不允许</text>
+      </view>
+      <view class='pub-dialog-item col-blue' bindtap="handelOk">
+        <text>好</text>
+      </view>
+    </view>
+  </view>
+</view>

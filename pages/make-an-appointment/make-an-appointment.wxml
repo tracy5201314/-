@@ -22,7 +22,7 @@
           <view wx:for="{{hospital.sourcesNumber}}" wx:key="index" class="sources-number-item" wx:for-item="sourcesNumber" hidden="{{index != hospital.normalNum}}">
             <!-- 无号源 -->
             <view class="default" wx:if="{{sourcesNumber.details.length == 0}}">
-              <image heigth src="../../static/images/default.png"></image>
+              <image heigth src="../../images/default.png"></image>
               <text>今日暂无排班情况</text>
             </view>
             <!-- 无号源 -->

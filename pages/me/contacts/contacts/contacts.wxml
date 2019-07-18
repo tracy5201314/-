@@ -1,0 +1,55 @@
+<view class="contacts">
+  <view class='contacts-mbox'>
+    <view class='contacts-list'>
+      <view class='contacts-item mt-size'>
+        <image class='contacts-item-icon' src='../../../../images/contacts-state-01.png'></image>
+        <view class='contacts-item-tximg'>
+          <image src='../../../../images/mine-tx-img.png'></image>
+        </view>
+        <view class='contacts-item-textbox'>
+          <view class='contacts-item-info1'>
+            <text class='contacts-item-info1-uname'>张仙女</text>
+            <text class='contacts-item-info1-uage'>18岁</text>
+            <text class='contacts-item-info1-gender'>女</text>
+            <view class='contacts-item-info1-icon'>默认</view>
+          </view>
+          <view class='contacts-item-info2'>
+            <text class='contacts-item-info2-title'>身份证号：</text>
+            <text class='contacts-item-info2-text'>500231****7855</text>
+          </view>
+          <view class='contacts-item-info3'>
+            <text class='contacts-item-info2-title'>电话号码：</text>
+            <text class='contacts-item-info2-text'>183*****752</text>
+          </view>
+        </view>
+      </view>
+      <view class='contacts-item mt-size'>
+        <image class='contacts-item-icon' src='../../../../images/contacts-state-02.png'></image>
+        <view class='contacts-item-tximg'>
+          <image src='../../../../images/mine-tx-img.png'></image>
+        </view>
+        <view class='contacts-item-textbox'>
+          <view class='contacts-item-info1'>
+            <text class='contacts-item-info1-uname'>冉云熙</text>
+            <text class='contacts-item-info1-uage'>20岁</text>
+            <text class='contacts-item-info1-gender'>女</text>
+          </view>
+          <view class='contacts-item-info2'>
+            <text class='contacts-item-info2-title'>身份证号：</text>
+            <text class='contacts-item-info2-text'>500231****7855</text>
+          </view>
+          <view class='contacts-item-info3'>
+            <text class='contacts-item-info2-title'>电话号码：</text>
+            <text class='contacts-item-info2-text'>183*****752</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='contacts-btnbox'>
+    <view class='contacts-btn' catchtap='toAddContacts'>
+      <text>添加</text>
+    </view>
+  </view>
+</view>

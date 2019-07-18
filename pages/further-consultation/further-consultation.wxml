@@ -1,0 +1,124 @@
+<view class='further-consultation'>
+  <view class='further-consultation-mbox'>
+    <!-- 选择患者 -->
+    <view class='further-consultation-item'>
+      <view class='further-consultation-seluser'>
+        <view class='further-consultation-userlist'>
+          <view class='further-consultation-userlist-item {{userIndex==index?"active":""}}' wx:for="{{userArr}}" wx:key="index" wx:for-index="index" wx:for-item="item"  bindtap='handleSelUser' data-index="{{index}}">
+            <text>{{item}}</text>
+          </view>
+          <view class='further-consultation-userlist-item oran'>
+            <image class='further-consultation-userlist-addicon' src='../../images/icon-add-white.png'></image>
+            <text>添加</text>
+          </view>
+        </view>
+        <view class='further-consultation-seluser-tip'>
+          请选择其中一个患者进行诊后报道，通过审核后，便于我时时关注您的病情，做更多交流。
+        </view>
+      </view>
+    </view>
+    <!-- 患者信息 -->
+    <view class='further-consultation-item mt-size'>
+      <view class='further-consultation-userinfo'>
+        <view class='further-consultation-userinfo-item'>
+          <text class='further-consultation-userinfo-ilabel'>我是你的</text>
+          <view class='further-consultation-userinfo-irbox'>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <view class='pub-radiobox'>
+                <label class="radio">
+                  <radio value="001" checked="true" color="#1e7df7"/>门诊病人
+                </label>
+              </view>
+              <view class='pub-radiobox'>
+                <label class="radio">
+                  <radio value="002" checked="" color="#1e7df7"/>病院病人
+                </label>
+              </view>
+            </radio-group>
+          </view>
+        </view>
+       <view class='further-consultation-userinfo-item'>
+          <text class='further-consultation-userinfo-ilabel'>看病日期</text>
+          <view class='further-consultation-userinfo-irbox'>
+            <picker mode="date" value="{{kbDate}}" start="2019-07-09" end="2020-09-01" bindchange="bindKbDateChange">
+              <view class="picker">
+                {{kbDate}}
+              </view>
+            </picker>
+          </view>
+          <image class='pub-icon-arrow' src='../../images/contacts-icon-arrow.png'></image>
+        </view>
+        <view class='further-consultation-userinfo-textabox'>
+          <view class='further-consultation-userinfo-t-label'>诊断疾病</view>
+          <view class='further-consultation-userinfo-t-textarea'>
+            <textarea placeholder='请填写诊断疾病'></textarea>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 诊后建议 -->
+    <view class='further-consultation-item mt-size'>
+      <view class='further-consultation-advice'>
+        <view class='further-consultation-advice-title'>诊后建议</view>
+        <view class='further-consultation-advice-mcont'>
+          <radio-group class="radio-group" bindchange="adviceChange">
+            <view class='further-consultation-advice-item'>
+              <label class="radio">
+                <text class='pub-radiobox-text'>暂不治疗，定期观察复诊</text>
+                <radio value="001" checked="" color="#1e7df7"/>
+              </label>
+            </view>
+            <view class='further-consultation-advice-item'>
+              <label class="radio">
+                <text class='pub-radiobox-text'>先不做检查，拿结果来找我</text>
+                <radio value="002" checked="" color="#1e7df7"/>
+              </label>
+            </view>
+            <view class='further-consultation-advice-item'>
+              <label class="radio">
+                <text class='pub-radiobox-text'>服药（外、内），定期复诊</text>
+                <radio value="003" checked="" color="#1e7df7"/>
+              </label>
+            </view>
+            <view class='further-consultation-advice-item'>
+              <label class="radio">
+                <text class='pub-radiobox-text'>住院治疗</text>
+                <radio value="004" checked="true" color="#1e7df7"/>
+              </label>
+            </view>
+          </radio-group>
+        </view>
+        <view class='further-consultation-advice-upload'>
+          <view class='pub-upload'>
+            <view class='pub-upload-list'>
+              <block wx:for="{{images}}" wx:key="*this">
+                <view class='pub-upload-item'>
+                  <!-- 图片缩略图 -->
+                  <image class="pub-upload-item-img" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="imgPreview"></image>
+                  <!-- 移除图片的按钮 -->
+                  <view class="pub-upload-item-del" data-index="{{index}}" bindtap="removeImage">
+                    <image src='../../images/icon-img-del.png'></image>
+                  </view>
+                </view>
+              </block>
+            </view>
+            <!-- 选择图片按钮 -->
+            <view class='pub-upload-btnbox' bindtap="chooseImage" wx:if="{{images.length < 3}}">
+              <image src='../../images/icon-img-upload.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='pub-upload-tip'>上传就诊凭证，可以上传您的病例，挂号单等，提供医生您是患者的凭证。</view>
+        <view class='further-consultation-advice-notice'>
+          诊后报到成功后，默认允许该医生查看个人健康档案
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class='further-consultation-btnbox'>
+    <view class='further-consultation-btn bgc-blue'>
+      <text>提交申请</text>
+    </view>
+  </view>
+</view>

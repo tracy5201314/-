@@ -1,0 +1,194 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.add-contacts{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.add-contacts-mbox{}
+.add-contacts-top{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.contacts-inpbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.contacts-inpbox-lable{
+  font-size: 28rpx;
+  color: #999;
+}
+.contacts-inpbox-input{
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+}
+.contacts-inpbox-verifybtn{
+  width: 190rpx;
+  padding-right: 10rpx;
+  text-align: right;
+  font-size: 30rpx;
+  color: #1e7df7;
+}
+.contacts-selcon{
+  flex: 1;
+  margin-right: 10rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #333;
+}
+.contacts-selcon-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.contacts-selcon .picker{
+  text-align: right;
+}
+.contacts-textabox{}
+.contacts-textabox-textarea{
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.contacts-textabox-textarea textarea{
+  height: 140rpx;
+  font-size: 28rpx;
+  color: #333;
+  white-space: normal;
+}
+.add-contacts-bottom{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.contacts-switchbox-lable{
+  font-size: 30rpx;
+  color: #333;
+}
+.contacts-switchbox{
+  flex: 1;
+  text-align: right;
+}
+.add-contacts-btnbox{
+  padding: 0 25rpx;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-contacts-btnitem{
+  flex: 1;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+.add-contacts-btn{
+  flex: 1;
+  display: block;
+  line-height: 82rpx;
+  text-align: center;
+  border-radius: 45rpx;
+}
+.add-contacts-btn text{
+  font-size: 30rpx;
+  color: #333;
+}
+.add-contacts-btn.col-white{
+  background: #fff;
+  box-shadow: 0rpx 0rpx 10rpx rgba(241,241,241,1);
+}
+.add-contacts-btn.col-white text{}
+.add-contacts-btn.col-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.add-contacts-btn.col-blue text{
+  color: #fff;
+}
+/* 弹窗 - 手机验证 */
+.contacts-modal{}
+.contacts-mask{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+}
+.contacts-modal-dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  width: 78%;
+  background: #fff;
+  border-radius: 8rpx;
+  transform: translate(-50%,-50%);
+}
+.contacts-modal-title{
+  padding-top: 40rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+.contacts-modal-cont{
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.contacts-modal-inpbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+}
+.contacts-modal-inpbox-input{
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+.contacts-modal-inpbox-verifybtn{
+  width: 190rpx;
+  padding-right: 10rpx;
+  text-align: right;
+  font-size: 30rpx;
+  color: #1e7df7;
+}
+.contacts-modal-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+.contacts-modal-btnitem{
+  flex: 1;
+  position: relative;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+  box-sizing: border-box;
+}
+.contacts-modal-btnitem.col-blue{
+  color: #1e7df7;
+  border-left: 1px solid #eee;
+
+}

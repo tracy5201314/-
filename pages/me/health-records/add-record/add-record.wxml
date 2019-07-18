@@ -1,0 +1,50 @@
+<view class='add-record'>
+  <view class='add-record-mbox'>
+    <view class='add-record-title'>请完善基本信息</view>
+    <view class='add-record-fillinfo'>
+      <view class='add-record-fillitem'>
+        <text class='add-record-label'>就诊时间</text>
+        <view class='add-record-selbox'>
+          <picker mode="date" value="{{jzDate}}" start="2019-07-09" end="2020-09-01" bindchange="bindJzDateChange">
+            <view class="picker">
+              {{jzDate}}
+            </view>
+          </picker>
+        </view>
+        <image class='add-record-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='add-record-fillitem'>
+        <text class='add-record-label'>医院</text>
+        <view class='add-record-selbox'>
+          <picker bindchange="bindHosChange" value="{{hosIndex}}" range="{{hosArr}}">
+            <view class="picker">
+              {{hosArr[hosIndex]}}
+            </view>
+          </picker>
+        </view>
+        <image class='add-record-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='add-record-fillitem'>
+        <text class='add-record-label'>科室</text>
+        <view class='add-record-selbox'>
+          <picker bindchange="bindKeshiChange" value="{{keshiIndex}}" range="{{keshiArr}}">
+            <view class="picker">
+              {{keshiArr[keshiIndex]}}
+            </view>
+          </picker>
+        </view>
+        <image class='add-record-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='add-record-fillitem'>
+        <text class='add-record-label'>医生姓名</text>
+        <input class='add-record-input' type="text" placeholder='非必填' />
+      </view>
+
+    </view>
+  </view>
+  <view class='add-record-btnbox'>
+    <view class='add-record-btn bgc-blue'>
+      <text>下一步</text>
+    </view>
+  </view>
+</view>

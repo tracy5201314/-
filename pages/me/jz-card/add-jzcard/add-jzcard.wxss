@@ -1,0 +1,113 @@
+page{
+  background: #f7f7f7;
+}
+.add-jzcard{}
+.jzcard-seluser{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.jzcard-seluser-lable{
+  font-size: 28rpx;
+  color: #999;
+}
+.jzcard-seluser-rcon{
+  flex: 1;
+  margin-right: 10rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+}
+.jzcard-seluser-rcon .picker{}
+.jzcard-seluser-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.add-jzcard-mbox{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.add-jzcard-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.add-jzcard-item:last-child{
+  border-bottom: none;
+}
+.add-jzcard-label{
+  font-size: 28rpx;
+  color: #999;
+}
+.add-jzcard-input{
+  flex: 1;
+  margin-left: 10rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+}
+.add-jzcard-selbox{
+  flex: 1;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+}
+.add-jzcard-selbox .picker{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.add-jzcard-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx;
+  margin-top: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.add-jzcard-btnbox.pd-size{
+  padding: 0 55rpx;
+}
+.add-jzcard-btnitem{
+  flex: 1;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+.add-jzcard-btn{
+  flex: 1;
+  display: block;
+  line-height: 82rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 45rpx;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 10rpx rgba(241,241,241,1);
+}
+.add-jzcard-btn text{
+  color: #333;
+}
+.add-jzcard-btn.bgc-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.add-jzcard-btn.bgc-blue text{
+  color: #fff;
+}

@@ -1,0 +1,22 @@
+<view class='login'>
+  <view class='login-mbox'>
+    <view class='login-title'>登录</view>
+    <form class='login-form'>
+      <view class="login-inpbox">
+        <input bindinput="inputPhoneNum" value="{{phoneNum}}" placeholder="填写手机号" />
+      </view>
+      <view class="login-inpbox">
+        <input bindinput="inputPwd" value="{{pwd}}" password="true" placeholder="密码" />
+      </view>
+      <view class="login-btnbox">
+        <view class="btn" hover-class="active" hover="true">
+          <text>登录</text>
+        </view>
+      </view>
+    </form>
+    <view class='login-footer'>
+      <view class='login-footer-l' catchtap='toForgetPwd'>忘记密码？</view>
+      <view class='login-footer-r' catchtap='toReg'>新用户注册</view>
+    </view>
+  </view>
+</view>

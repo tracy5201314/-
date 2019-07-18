@@ -1,0 +1,189 @@
+page{
+  background: #f7f7f7;
+}
+.consult-doctor{}
+.c-doctor-mbox{
+  height: 200rpx;
+}
+
+/* 对话内容样式 */
+.dialog-time{
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}
+.dialog-time text{}
+.dialog-item{
+  width: 100%;
+  margin: 5rpx auto 50rpx auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dialog-item.l{
+  padding-right: 150rpx;
+}
+.dialog-item.r{
+  padding-left: 150rpx;
+}
+.dialog-item-mbox{
+  display: flex;
+}
+.dialog-item.l .dialog-item-mbox{
+  justify-content: flex-start
+}
+.dialog-item.r .dialog-item-mbox{
+  justify-content: flex-end;
+}
+.dialog-item-tx{
+  display: block;
+  width: 86rpx;
+  height: 86rpx;
+}
+.dialog-item-msgbox{
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dialog-item.l .dialog-item-msgbox{
+  padding-left: 30rpx;
+}
+.dialog-item.r .dialog-item-msgbox{
+  padding-right: 30rpx;
+}
+.dialog-item-msgbox-text{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dialog-item.l .dialog-item-msgbox-text{
+  background: #fff;
+}
+.dialog-item.r .dialog-item-msgbox-text{
+  background: #1e7df7;
+}
+.dialog-item-arrow{
+  display: block;
+  height: 21rpx;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+}
+.dialog-item-arrow.l{
+  width: 13rpx;
+  left: 18rpx;
+  
+}
+.dialog-item-arrow.r{
+  width: 15rpx;
+  right: 15rpx;
+}
+.dialog-item-img{
+  display: block;
+  margin-bottom: 15rpx;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dialog-item-img img{
+  border-radius: 4rpx;
+  vertical-align: top;
+}
+.dialog-item-info1{
+  font-size: 30rpx;
+  color: #333;
+}
+.dialog-item.r .dialog-item-info1{
+  color: #fff;
+}
+.dialog-item-prescription{}
+.dialog-item-prescription-hd{
+  border-bottom: 1px solid #eee;
+}
+.dialog-item-prescription-link{
+  padding-bottom: 30rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #1e7df7;
+}
+.dialog-item-prescription-bd{
+  margin-top: 30rpx;
+}
+.dialog-item-prescription-item{
+  /* display: flex; */
+}
+.dialog-item-prescription-item text{
+  display: inline;
+  font-size: 30rpx;
+}
+.dialog-item-prescription-title{
+  color: #666;
+}
+.dialog-item-prescription-text{
+  color: #333;
+}
+/* footer */
+.dialog-footer{
+  width: 100%;
+  height: 185rpx;
+  overflow: hidden;
+  background: #f0f0f0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 18;
+}
+.dialog-footer-mbox{
+  padding: 0 30rpx;
+}
+.dialog-footer-hd{
+  padding-top: 22rpx; 
+}
+.dialog-footer-textbox{
+  padding: 10rpx 20rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dialog-footer-textbox textarea{
+  width: 100%;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #333;
+  white-space: normal;
+}
+.dialog-footer-bd{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15rpx 0;
+}
+.dialog-footer-biaoqing{
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 10rpx;
+}
+.dialog-footer-photo{
+  display: block;
+  width: 51rpx;
+  height: 51rpx;
+  margin-left: 55rpx;
+}
+.dialog-footer-btnbox{
+  flex: 1;
+  text-align: right;
+}
+.dialog-footer-btn{
+  display: inline-block;
+  height: 60rpx;
+  padding: 0 22rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #1e7df7;
+  border-radius: 8rpx;
+}

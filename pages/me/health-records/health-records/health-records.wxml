@@ -1,0 +1,192 @@
+<view class='health-records'>
+  <view class='health-records-hd'>
+    <!-- 用户信息 -->
+    <view class='health-records-userinfo'>
+      <view class='health-records-tximg'>
+        <image src='../../../../images/mine-tx-img.png'></image>
+      </view>
+      <view class='health-records-textcon'>
+        <view class='health-records-uname'>冉云熙</view>
+        <view class='health-records-genderage'>
+          <view class='health-records-genderage-item'>
+            <text class='health-records-genderage-title'>性别：</text>
+            <text class='health-records-genderage-text'>女</text>
+          </view>
+          <view class='health-records-genderage-item ml-size'>
+            <text class='health-records-genderage-title'>年龄：</text>
+            <text class='health-records-genderage-text'>25岁</text>
+          </view>
+        </view>
+      </view>
+      <image class='health-records-arrow' src='../../../../images/mine-menu-arrow.png'></image>
+    </view>
+    <!-- nav切换 -->
+    <view class='health-records-nav'>
+      <view class='health-records-nav-item {{1==currentId?"active":""}}' id='1' catchtap='handleNav'>
+        <text>病历记录</text>
+      </view>
+      <view class='health-records-nav-item {{2==currentId?"active":""}}' id='2' catchtap='handleNav'>
+        <text>基本健康信息</text>
+      </view>
+    </view>
+  </view>
+  <!-- 病历记录 -->
+  <!-- 有病历记录时显示 -->
+  <view class='health-records-bd {{currentId==1&&HRecord>0?"show":""}}'>
+    <view class='medical-record-bd mt-size'>
+      <view class='medical-record-list'>
+        <view class='medical-record-item' catchtap='toMRecordDetil'>
+          <view class='medical-record-info1'>
+            <text>2019.01.01</text>
+            <text class='ml-size'>预约挂号</text>
+          </view>
+          <view class='medical-record-info2'>
+            <text>王颖</text>
+            <text class='ml-size'>女</text>
+            <text class='ml-size'>20岁</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>主诉：</text>
+            <text class='medical-record-info3-text'>暂无</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>诊断：</text>
+            <text class='medical-record-info3-text'>暂无</text>
+          </view>
+        </view>
+        <view class='medical-record-item' catchtap='toMRecordDetil'>
+          <view class='medical-record-info1'>
+            <text>2019.02.01</text>
+            <text class='ml-size'>病历记录</text>
+          </view>
+          <view class='medical-record-info2'>
+            <text>王颖</text>
+            <text class='ml-size'>女</text>
+            <text class='ml-size'>20岁</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>主诉：</text>
+            <text class='medical-record-info3-text'>扁桃体发炎，喉咙肿痛，头痛耳鸣 诊断：扁桃体发炎</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>诊断：</text>
+            <text class='medical-record-info3-text'>扁桃体发炎</text>
+          </view>
+        </view>
+        <view class='medical-record-item' catchtap='toMRecordDetil'>
+          <view class='medical-record-info1'>
+            <text>2019.01.01</text>
+            <text class='ml-size'>预约挂号</text>
+          </view>
+          <view class='medical-record-info2'>
+            <text>王颖</text>
+            <text class='ml-size'>女</text>
+            <text class='ml-size'>20岁</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>主诉：</text>
+            <text class='medical-record-info3-text'>暂无</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>诊断：</text>
+            <text class='medical-record-info3-text'>暂无</text>
+          </view>
+        </view>
+        <view class='medical-record-item' catchtap='toMRecordDetil'>
+          <view class='medical-record-info1'>
+            <text>2019.02.01</text>
+            <text class='ml-size'>病历记录</text>
+          </view>
+          <view class='medical-record-info2'>
+            <text>王颖</text>
+            <text class='ml-size'>女</text>
+            <text class='ml-size'>20岁</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>主诉：</text>
+            <text class='medical-record-info3-text'>扁桃体发炎，喉咙肿痛，头痛耳鸣 诊断：扁桃体发炎</text>
+          </view>
+          <view class='medical-record-info3'>
+            <text class='medical-record-info3-title'>诊断：</text>
+            <text class='medical-record-info3-text'>扁桃体发炎</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='health-records-footer'>
+      <view class='health-records-btn bgc-blue' catchtap='toAddRecord'>
+        <text>新建病例</text>
+      </view>
+    </view>
+  </view>
+  <!-- 暂无病历时显示 -->
+  <view class='health-records-bd {{currentId==1&&HRecord==0?"show":""}}'>
+    <view class='medical-record-quesheng'>
+      <image class='medical-record-quesheng-img' src='../../../../images/mine-quesheng-01.png'></image>
+      <text class='medical-record-quesheng-text'>暂无病历记录</text>
+    </view>
+  </view>
+  <!-- 基本健康信息 -->
+  <view class='health-records-bd {{currentId==2?"show":""}}'>
+    <view class='base-jkinfo-bd mt-size'>
+      <view class='base-jkinfo-title'>信息仅供主治医师查看，请认真填写</view>
+      <view class='base-jkinfo-mbox'>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>婚姻状况</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>已婚</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>生育状况</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>已生育</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>手术和外伤</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>背部手术</text></view>
+            <view class='base-jkinfo-mitem-state'><text>胸部手术</text></view>
+            <view class='base-jkinfo-mitem-state'><text>皮肤软组织损伤</text></view>
+            <view class='base-jkinfo-mitem-state'><text>烫伤</text></view>
+            <view class='base-jkinfo-mitem-state'><text>肌腱损伤</text></view>
+            <view class='base-jkinfo-mitem-state'><text>刀砍伤</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>药物过敏</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>青霉素</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>食物和接触物过敏</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>暂无</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>家族病史</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>心脏病</text></view>
+          </view>
+        </view>
+        <view class='base-jkinfo-mitem'>
+          <view class='base-jkinfo-mitem-title'>个人习惯</view>
+          <view class='base-jkinfo-mitem-rbox'>
+            <view class='base-jkinfo-mitem-state'><text>久坐</text></view>
+            <view class='base-jkinfo-mitem-state'><text>饮酒</text></view>
+            <view class='base-jkinfo-mitem-state'><text>低头族</text></view>
+            <view class='base-jkinfo-mitem-state'><text>玩手机</text></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='health-records-footer'>
+      <view class='health-records-btn bgc-blue' catchtap='toEditJkInfo'>
+        <text>编辑</text>
+      </view>
+    </view>
+  </view>
+</view>

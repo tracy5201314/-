@@ -1,0 +1,145 @@
+<view class='mine'>
+  <!-- 用户信息 -->
+  <!-- 已经登录时显示 -->
+  <view class='mine-info'>
+    <view class='mine-tximg'>
+      <image src='../../../images/mine-tx-img.png'></image>
+    </view>
+    <view class='mine-name'>15025560299</view>
+    <view class='mine-info-btnbox'>
+      <view class='mine-info-logout' catchtap='logout'>退出登录</view>
+    </view>
+  </view>
+  <!-- 未登录时显示 -->
+  <view class='mine-info' style='display:none;'>
+    <view class='mine-tximg'>
+      <image src='../../../images/mine-tx-img.png'></image>
+    </view>
+    <view class='mine-name'>登录/注册</view>
+  </view>
+  <!-- 优惠券、消费支出 -->
+  <view class='mine-consume'>
+    <view class='mine-consume-bgblue'></view>
+    <view class='mine-consume-bgtransp'></view>
+    <view class='mine-consume-mbox'>
+      <view class='mine-consume-item'>
+        <text class='mine-consume-item-title'>3张</text>
+        <text class='mine-consume-item-subtitle'>优惠券</text>
+      </view>
+      <view class='mine-consume-item'>
+        <text class='mine-consume-item-title'>￥798.00</text>
+        <text class='mine-consume-item-subtitle'>消费支出</text>
+      </view>
+    </view>
+  </view>
+  <view class='mine-pdsize mt-size'>
+    <!-- menu -->
+    <view class='mine-menu'>
+      <view class='mine-menu-item'>
+        <image class='mine-menu-icon' src='../../../images/mine-menu-icon01.png'></image>
+        <text>问诊订单</text>
+        <image class='mine-menu-arrow' src='../../../images/mine-menu-arrow.png'></image>
+      </view>
+      <view class='mine-menu-item'>
+        <image class='mine-menu-icon' src='../../../images/mine-menu-icon02.png'></image>
+        <text>商品订单</text>
+        <image class='mine-menu-arrow' src='../../../images/mine-menu-arrow.png'></image>
+      </view>
+      <view class='mine-menu-item' catchtap='toContacts'>
+        <image class='mine-menu-icon' src='../../../images/mine-menu-icon03.png'></image>
+        <text>家庭联系人</text>
+        <image class='mine-menu-arrow' src='../../../images/mine-menu-arrow.png'></image>
+      </view>
+      <view class='mine-menu-item' catchtap='toJkCard'>
+        <image class='mine-menu-icon' src='../../../images/mine-menu-icon04.png'></image>
+        <text>就诊卡管理</text>
+        <image class='mine-menu-arrow' src='../../../images/mine-menu-arrow.png'></image>
+      </view>
+      <view class='mine-menu-item' catchtap='toAddr'>
+        <image class='mine-menu-icon' src='../../../images/mine-menu-icon05.png'></image>
+        <text>地址管理</text>
+        <image class='mine-menu-arrow' src='../../../images/mine-menu-arrow.png'></image>
+      </view>
+    </view>
+    <!-- 健康档案 -->
+    <view class='mine-archives mt-size'>
+      <swiper class='mine-archives-swiper' indicator-dots="true" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="rgba(0, 0, 0, .5)">
+        <swiper-item class='mine-archives-swiperitem'>
+          <view class='mine-archives-title'>健康档案</view>
+          <view class='mine-archives-mbox'>
+            <view class='mine-archives-userinfo'>
+              <text class='mine-archives-uname'>张仙女</text>
+              <text class='mine-archives-uage'>18岁</text>
+              <text class='mine-archives-gender'>女</text>
+              <view class='mine-archives-icon'>默认</view>
+            </view>
+            <view class='mine-archives-detail'>
+              <view class='mine-archives-detailitem'>
+                <text class='mine-archives-detailitem-title'>7</text>
+                <text class='mine-archives-detailitem-subtitle'>电子病历</text>
+                <view class='mine-archives-detailitem-btn col-green' catchtap='toAddRecord'>新建病历</view>
+              </view>
+              <view class='mine-archives-detailitem'>
+                <text class='mine-archives-detailitem-title'>100%</text>
+                <text class='mine-archives-detailitem-subtitle'>健康信息</text>
+                <view class='mine-archives-detailitem-btn col-blue' catchtap='toRecordDetail'>查看健康档案</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class='mine-archives-swiperitem'>
+          <view class='mine-archives-title'>健康档案</view>
+          <view class='mine-archives-mbox'>
+            <view class='mine-archives-userinfo'>
+              <text class='mine-archives-uname'>陈仙女</text>
+              <text class='mine-archives-uage'>18岁</text>
+              <text class='mine-archives-gender'>女</text>
+              <!-- <view class='mine-archives-icon'>默认</view> -->
+            </view>
+            <view class='mine-archives-detail'>
+              <view class='mine-archives-detailitem'>
+                <text class='mine-archives-detailitem-title'>2</text>
+                <text class='mine-archives-detailitem-subtitle'>电子病历</text>
+                <view class='mine-archives-detailitem-btn col-green' catchtap='toAddRecord'>新建病历</view>
+              </view>
+              <view class='mine-archives-detailitem'>
+                <text class='mine-archives-detailitem-title'>100%</text>
+                <text class='mine-archives-detailitem-subtitle'>健康信息</text>
+                <view class='mine-archives-detailitem-btn col-blue' catchtap='toRecordDetail'>查看健康档案</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 健康档案没有信息时显示 -->
+    <view class='mine-archives mt-size'>
+      <swiper class='mine-archives-swiper' indicator-dots="true" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="rgba(0, 0, 0, .5)">
+        <swiper-item class='mine-archives-swiperitem'>
+          <view class='mine-archives-title'>健康档案</view>
+          <view class='mine-archives-mbox'>
+            <view class='mine-archives-quesheng'>
+              <image class='mine-archives-qsimg' src='../../../images/mine-quesheng-01.png'></image>
+              <text class='mine-archives-text'>请添加联系人，进行健康档案管理</text>
+              <view class='mine-archives-btnbox'>
+                <view class='mine-archives-btn' catchtap='toAddContacts'>添加家庭联系人</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class='mine-archives-swiperitem'>
+          <view class='mine-archives-title'>健康档案</view>
+          <view class='mine-archives-mbox'>
+            <view class='mine-archives-quesheng'>
+              <image class='mine-archives-qsimg' src='../../../images/mine-quesheng-01.png'></image>
+              <text class='mine-archives-text'>请添加联系人，进行健康档案管理</text>
+              <view class='mine-archives-btnbox'>
+                <view class='mine-archives-btn' catchtap='toAddContacts'>添加家庭联系人</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>

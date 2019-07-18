@@ -1,6 +1,6 @@
 <!-- 服务购买成功 -->
 <view class="success">
-  <image src="../../static/images/pay-success.png" />
+  <image src="../../images/pay-success.png" />
   <view class="text">支付成功！</view>
   <view class="tips">注：您可以在“个人中心”-“问诊订单”中查看相关订单信息及咨询。</view>
   <!-- 按钮 -->

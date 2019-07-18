@@ -1,0 +1,46 @@
+page{
+  background: #f7f7f7;
+}
+.doctor-advice{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.doctor-advice-mbox{
+  padding: 50rpx 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.doctor-advice-textarea{}
+.doctor-advice-textarea textarea{
+  width: 100%;
+  height: 200rpx;
+  font-size: 28rpx;
+  color: #333;
+  white-space: normal;
+}
+.doctor-advice-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.doctor-advice-btn{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 45rpx;
+}
+.doctor-advice-btn.bgc-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.doctor-advice-btn text{
+  color: #fff;
+}

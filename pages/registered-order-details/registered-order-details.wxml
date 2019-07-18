@@ -1,0 +1,98 @@
+<!-- 挂号订单详情 -->
+<view class="register-order-details">
+  <!-- 二维码 -->
+  <view class="qr-code">
+    <image src="../../images/qr-code-small.png" />
+    <text>点击放大二维码，通过自助机扫码打印预约小票。</text>
+  </view>
+  <!-- 二维码 -->
+  <!-- 状态 -->
+  <view class="state">
+    <view>挂号预约成功</view>
+    <view>取号码</view>
+    <view>DG23458</view>
+  </view>
+  <!-- 状态 -->
+  <!-- 挂号信息 -->
+  <view class="register-msg">
+    <view class="msg-item">
+      <view>就诊医院</view>
+      <view>重庆医科大学附属第一医院</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊科室</view>
+      <view>精神科</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊时间</view>
+      <view class="time">2019.06.24 上午(9:00~9:30）</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊医生</view>
+      <view>林朝胜</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊地址</view>
+      <view>三楼北一区</view>
+    </view>
+    <view class="msg-item">
+      <view>取号密码</view>
+      <view>DG23458</view>
+    </view>
+  </view>
+  <!-- 挂号信息 -->
+  <!-- 病人信息 -->
+  <view class="patient-msg">
+    <view class="msg-item">
+      <view>就诊人
+
+      </view>
+      <view>重庆医科大学附属第一医院</view>
+    </view>
+    <view class="msg-item">
+      <view>身份证号</view>
+      <view>500231199812144259</view>
+    </view>
+    <view class="msg-item">
+      <view>联系电话</view>
+      <view>15026650235</view>
+    </view>
+  </view>
+  <!-- 病人信息 -->
+  <!-- 支付信息 -->
+  <view class="pay-msg">
+    <view class="msg-item">
+      <view>挂号时间</view>
+      <view>2018-6-13 13:57:05</view>
+    </view>
+    <view class="msg-item">
+      <view>挂号方式</view>
+      <view>网上预约</view>
+    </view>
+    <view class="msg-item">
+      <view>支付方式</view>
+      <view>微信支付</view>
+    </view>
+    <view class="msg-item">
+      <view>诊查费</view>
+      <view>22.00元</view>
+    </view>
+    <view class="msg-item">
+      <view>信息服务费</view>
+      <view>0.00元</view>
+    </view>
+    <view class="total-cost">
+      合计费用：
+      <text>22.00元</text>
+    </view>
+  </view>
+  <!-- 支付信息 -->
+  <!-- 按钮 -->
+  <view class="btn">
+    <button class="btn-medical">电子病历</button>
+    <button hidden="{{btnFlag}}" class="btn-pay">去支付</button>
+    <button hidden="{{!btnFlag}}" class="btn-retreat">退号</button>
+  </view>
+  <!-- 按钮 -->
+</view>
+<!-- 挂号订单详情 -->

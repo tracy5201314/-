@@ -1,21 +1,349 @@
 /**index.wxss**/
-.userinfo {
+page{
+  background-color: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.index {
+  padding-bottom: 50rpx;
+}
+.index-hdbox{
+  position: relative;
+}
+.index-hdbgimg{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 326rpx;
+}
+.index-hdmbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+  left: 30rpx;
+}
+.index-docimg{}
+.index-docimg image{
+  display: block;
+  width: 226rpx;
+  height: 300rpx;
+}
+.index-docinfo{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.index-docinfo-top{
+  position: relative;
+}
+.index-docinfo-infobg{
+  display: block;
+  height: 127rpx;
+}
+.index-docinfo-toptext{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 42rpx;
+  z-index: 2;
+}
+.index-docinfo-text1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.index-docinfo-docname{
+  font-weight: 600;
+  font-size: 48rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.index-docinfo-zc{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.index-docinfo-line{
+  margin: 0 7rpx;
+  font-size: 24rpx;
+}
+.index-docinfo-keshi{
+  font-size: 24rpx;
+}
+.index-docinfo-hosname{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.index-docinfo-bottom{
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  color: #fff;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+}
+.index-docinfo-bottomtext{
+  display: inline;
+  line-height: 36rpx;
+}
+.index-menu{
+  position: relative;
+}
+.index-menu-bgimg{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 158rpx;
+}
+.index-menu-mbox{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  bottom: 0;
+  left: 30rpx;
+}
+.index-menu-list{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background: #fff;
+  border-radius: 12rpx;
+}
+.index-menu-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.index-menu-item image{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.index-menu-item text{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #333;
 }
-
-.usermotto {
-  margin-top: 200px;
+.index-pdsize{
+  position: relative;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.index-msgcon{
+  padding: 25rpx 0;
+  background: #fff;
+}
+.index-msgcon-pdsize{
+  padding: 0 22rpx;
+  box-sizing: border-box;
+}
+.index-infobox-swiper{
+  width: 100%;
+  height: 88rpx;
+}
+.index-infobox-swiperitem{}
+.index-infobox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 88rpx;
+  padding: 0 15rpx;
+  background: #f7f6f9;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.index-infobox-title{
+  padding: 0 12rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.index-infobox-subtitle{
+  flex: 1;
+  margin-left: 15rpx;
+  font-size: 24rpx;
+  color: #73869b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index-infobox-btnbox{}
+.index-infobox-btn{
+  width: 119rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #73869b;
+  background: #f7f6f9;
+  border-radius: 4rpx;
+  box-shadow: 0rpx 1rpx 10rpx rgba(226,225,227,1);
+}
+.index-infobox-btn.blue{
+  width: 119rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  background: #1690fe;
+  border-radius: 4rpx;
+  box-shadow: 0rpx 1rpx 10rpx rgba(167,200,246,1);
+}
+.index-jiaoyan{}
+.index-jiaoyan-title{
+  padding: 25rpx 30rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #414753;
+}
+.index-jiaoyan-list{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 11rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.index-jiaoyan-item{
+  flex: 1;
+  padding: 0 11rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.index-jiaoyan-link{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.index-jiaoyan-link image{
+  height: 148rpx;
+  align-self: flex-end;
+  vertical-align: bottom;
+}
+.index-jiaoyan-link.bgc-01{
+  background: #f8efd6;
+}
+.index-jiaoyan-link.bgc-01 image{
+  width: 98rpx;
+}
+.index-jiaoyan-link.bgc-02{
+  background: #e2e9f9;
+}
+.index-jiaoyan-link.bgc-02 image{
+  width: 112rpx;
+}
+.index-jiaoyan-text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.index-jiaoyan-text-title{
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #52586b;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-jiaoyan-text-subtitle{
+  margin-top: 15rpx;
+  font-size: 26rpx;
+  color: #607182;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-article{
+  width: 100%;
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.index-article-title{
+  padding: 28rpx 0 10rpx;
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #52586b;
+}
+.index-article-list{}
+.index-article-item{
+  position: relative;
+  padding: 30rpx 0;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.index-article-item:last-child{
+  border-bottom: none;
+}
+.index-article-img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 334rpx;
+  border-radius: 6rpx;
+}
+.index-article-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35rpx;
+}
+.index-article-bottom-title{
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-article-share{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.index-article-share text{
+  font-size: 13px;
+  color: #999;
+}
+.index-article-share-icon{
+  display: block;
+  width: 26rpx;
+  height: 26rpx;
+  margin-left: 5rpx;
 }

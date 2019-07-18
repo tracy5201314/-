@@ -1,0 +1,34 @@
+<view class='prescription'>
+  <view class='prescription-mbox'>
+    <view class='pub-pdsize'>
+      <view class='pub-textarea'>
+        <textarea placeholder='请详细描述病情信息，如发病时间、症状、处理方 式、治疗经过、目前状况等'></textarea>
+      </view>
+    </view>
+    <view class='pub-upload'>
+      <view class='pub-upload-list'>
+        <block wx:for="{{images}}" wx:key="*this">
+          <view class='pub-upload-item'>
+            <!-- 图片缩略图 -->
+            <image class="pub-upload-item-img" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="imgPreview"></image>
+            <!-- 移除图片的按钮 -->
+            <view class="pub-upload-item-del" data-index="{{index}}" bindtap="removeImage">
+              <image src='../../../../images/icon-img-del.png'></image>
+            </view>
+          </view>
+        </block>
+      </view>
+      <!-- 选择图片按钮 -->
+      <view class='pub-upload-btnbox' bindtap="chooseImage" wx:if="{{images.length < 3}}">
+        <image src='../../../../images/icon-img-upload.png'></image>
+      </view>
+    </view>
+
+    <view class='pub-upload-tip'>注：上传症状部位及相关图片，最多上传3张。</view>
+  </view>
+  <view class='pub-btnbox'>
+    <view class='pub-btn bgc-blue'>
+      <text>保存</text>
+    </view>  
+  </view>
+</view>

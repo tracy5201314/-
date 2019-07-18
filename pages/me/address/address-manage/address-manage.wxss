@@ -1,0 +1,119 @@
+page{
+  background: #f7f7f7;
+}
+/*  重写 radio 样式  */
+/* 未选中的 背景样式 */
+radio .wx-radio-input{
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx;
+}
+/* 选中后的 背景样式 （可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+  border-color: #1e7df7;
+  background: #1e7df7;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;
+  width: 36rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 36rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 36rpx;
+  text-align: center;
+  font-size:24rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.address-manage{
+  padding: 0 30rpx 30rpx 30rpx;
+}
+.address-item{
+  margin-top: 30rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.address-item-info{
+  padding: 22rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.address-item-text1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address-item-uname{
+  font-size: 28rpx;
+  color: #333;
+}
+.address-item-phonenum{
+  font-size: 26rpx;
+  color: #333;
+}
+.address-item-text2{
+  margin-top: 25rpx;
+  line-height: 36rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.address-item-tool{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.address-item-radiobox{
+  font-size: 24rpx;
+  color: #666;
+}
+.address-item-tool-r{
+  display: flex;
+}
+.address-item-tool-r text{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.address-item-edit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-item-edit image{
+  width: 33rpx;
+  height: 35rpx;
+  vertical-align: top;
+}
+.address-item-del{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rpx;
+}
+.address-item-del image{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: top;
+}
+.address-addbox{
+  margin-top: 80rpx;
+}
+.address-addbtn{
+  display: block;
+  margin-top: 110rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.address-addbtn text{
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #fff;
+}

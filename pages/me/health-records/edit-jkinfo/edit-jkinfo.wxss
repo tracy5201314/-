@@ -1,0 +1,86 @@
+page{
+  background: #f7f7f7;
+}
+.edit-jkinfo{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.edit-jkinf-mbox{
+  padding: 0 22rpx 20rpx 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.edit-jkinf-mtitle{
+  line-height: 100rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.edit-jkinf-item{}
+.edit-jkinf-item-title{
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+.edit-jkinf-item-cont{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16rpx 0;
+}
+.edit-jkinf-item-optiongroup{}
+.edit-jkinf-item-option{
+  flex: auto;
+  height: 52rpx;
+  padding: 0 25rpx;
+  margin: 16rpx 30rpx 16rpx 0;
+  line-height: 52rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #eee;
+  border-radius: 24rpx;
+}
+.edit-jkinf-item-option.active{
+  color:#fff;
+  background:#1e7df7;
+}
+.edit-jkinf-item-textarea{
+  padding: 25rpx 20rpx;
+  margin: 10rpx 0 20rpx;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.edit-jkinf-item-textarea textarea{
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #666;
+  white-space: normal;
+}
+.edit-jkinfo-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.edit-jkinfo-btn{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 45rpx;
+}
+.edit-jkinfo-btn.bgc-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.edit-jkinfo-btn text{
+  color: #fff;
+}

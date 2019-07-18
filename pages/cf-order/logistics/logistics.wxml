@@ -1,0 +1,33 @@
+<view class='logistics'>
+  <view class='logistics-hd'>
+    <text class='logistics-hd-title'>订单编号：</text>
+    <text class='logistics-hd-text'>8975755694321695654</text>
+  </view>
+  <view class='logistics-bd mt-size'>
+    <view class='logistics-bd-mbox'>
+      <view class='logistics-list'>
+        <view class='logistics-item'>
+          <image class='logistics-item-icon' src='../../../images/logistics-icon-blue.png'></image>
+          <view class='logistics-item-mbox'>
+            <view class='logistics-item-text'>您的订单已从境外发货，请耐心等待</view>
+            <view class='logistics-item-time'>2018-03-25 16:52:30</view>
+          </view>
+        </view>
+        <view class='logistics-item'>
+          <view class='logistics-item-mbox'>
+            <view class='logistics-item-text'>您的订单已从境外发货，请耐心等待</view>
+            <view class='logistics-item-time'>2018-03-25 16:52:30</view>
+          </view>
+        </view>
+        <view class='logistics-item'>
+          <image class='logistics-item-icon' src='../../../images/logistics-icon-gray.png'></image>
+          <view class='logistics-item-mbox'>
+            <view class='logistics-item-text'>您的订单已从境外发货，请耐心等待</view>
+            <view class='logistics-item-time'>2018-03-25 16:52:30</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

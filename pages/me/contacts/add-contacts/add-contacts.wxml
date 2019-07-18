@@ -1,0 +1,98 @@
+<view class='add-contacts'>
+  <form class='add-contacts-form'>
+    <view class='add-contacts-mbox'>
+      <view class='add-contacts-top'>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>姓名</text>
+          <input class='contacts-inpbox-input' type="text" placeholder='请输入真实姓名' />
+        </view>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>身份证号</text>
+          <input class='contacts-inpbox-input' type="text" placeholder='请谨慎填写，填写后无法修改' />
+        </view>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>性别</text>
+          <input class='contacts-inpbox-input' type="text" placeholder='无需填写，自动判断' />
+        </view>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>手机号</text>
+          <input class='contacts-inpbox-input' type="text" placeholder='请填写手机号' />
+        </view>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>填写验证码</text>
+          <input class='contacts-inpbox-input' type="text" placeholder='请填写验证码' />
+          <view class='contacts-inpbox-verifybtn' hover-class="active" hover="true">
+            <text>获取验证码</text>
+          </view>
+        </view>
+        <view class='contacts-inpbox'>
+          <text class='contacts-inpbox-lable'>家庭地址</text>
+          <view class='contacts-selcon'>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{region[0]}} {{region[1]}} {{region[2]}}
+              </view>
+            </picker>
+          </view>
+          <image class='contacts-selcon-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+        </view>
+        <view class='contacts-textabox'>
+          <view class='contacts-textabox-textarea' wx:if="{{!showModal}}">
+            <textarea placeholder='请填写详细地址，街道、楼牌号' ></textarea>
+          </view>
+        </view>
+      </view>
+      <view class='add-contacts-bottom mt-size'>
+        <text class='contacts-switchbox-lable'>设置默认就诊人</text>
+        <view class='contacts-switchbox'>
+          <switch checked bindchange="switch1Change" color='#1e7df7' style='zoom: .6;'/>
+        </view>
+      </view>
+    </view>
+  </form>
+  <!-- 添加联系人时显示 -->
+  <view class='add-contacts-btnbox'>
+    <view class='add-contacts-btn col-blue'>
+      <text>保存</text>
+    </view>
+  </view>
+  <!-- 编辑联系人时显示 -->
+  <view class='add-contacts-btnbox' style='margin-top:30rpx;'>
+    <view class='add-contacts-btnitem'>
+      <view class='add-contacts-btn col-white'>
+        <text>删除</text>
+      </view>
+    </view>
+    <view class='add-contacts-btnitem'>
+      <view class='add-contacts-btn col-blue'>
+        <text>保存</text>
+      </view>
+    </view>
+  </view>
+  <!-- 手机验证 -->
+  <view class='contacts-modal' wx:if="{{showModal}}">
+    <view class='contacts-mask' catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+    <view class='contacts-modal-dialog' wx:if="{{showModal}}">
+      <view class='contacts-modal-title'>手机验证</view>
+      <view class='contacts-modal-cont'>
+        <view class='contacts-modal-inpbox'>
+          <input class='contacts-modal-inpbox-input' type="text" placeholder='请输入手机号' />
+        </view>
+        <view class='contacts-modal-inpbox'>
+          <input class='contacts-modal-inpbox-input' type="text" placeholder='请输入验证码' />
+          <view class='contacts-modal-inpbox-verifybtn' hover-class="active" hover="true">
+            <text>获取验证码</text>
+          </view>
+        </view>
+      </view>
+      <view class='contacts-modal-btnbox'>
+        <view class='contacts-modal-btnitem' bindtap="modalCandel">
+          <text>取消</text>
+        </view>
+        <view class='contacts-modal-btnitem col-blue' bindtap="modalConfirm">
+          <text>保存</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

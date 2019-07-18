@@ -3,7 +3,7 @@
   <!-- 搜索 -->
   <view class="search">
     <text>重庆</text>
-    <view style="background-image: url('../../static/images/icon-search.png');">
+    <view style="background-image: url('../../images/icon-search.png');">
       <input placeholder="可搜索全国医院" type="text" confirm-type="search"/>
     </view>
   </view>

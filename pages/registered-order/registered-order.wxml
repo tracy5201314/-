@@ -1,0 +1,79 @@
+<!-- 挂号订单 -->
+<view class="register-order">
+  <!-- 订单顶部 -->
+  <view class="order-title">
+    <navigator hover-class="no" class="active" url="">挂号订单</navigator>
+    <navigator hover-class="no" url="../graphic-order/graphic-order">图文订单</navigator>
+    <navigator hover-class="no" url="">电话订单</navigator>
+    <navigator hover-class="no" url="">处方订单</navigator>
+  </view>
+  <!-- 订单顶部 -->
+  <!-- 电话订单列表 -->
+  <view class="order-list">
+    <view class="order-list-content">
+      <view class="tips">最近30天挂号订单</view>
+      <view class="order-list-details" style="height:{{height}}rpx">
+        <view class="order-list-item">
+          <!-- 医院信息 -->
+          <view class="hospital-msg">
+            <view class="hospital-name">陆军特色医学中心（大坪医院）</view>
+            <view class="hospital-department">高血压内分泌门诊</view>
+          </view>
+          <!-- 医院信息 -->
+          <!-- 病人信息 -->
+          <view class="patient-msg">
+            <view class="details">
+              <view>2019.06.24 上午(9:00~9:30）</view>
+              <view>就诊人：王英杰  女  25岁</view>
+            </view>
+            <view class="state">
+              <button bindtap="retreatOrder" class="btn-retreat">退号</button>
+            </view>
+          </view>
+        </view>
+        <view class="order-list-item">
+          <!-- 医院信息 -->
+          <view class="hospital-msg">
+            <view class="hospital-name">陆军特色医学中心（大坪医院）</view>
+            <view class="hospital-department">高血压内分泌门诊</view>
+          </view>
+          <!-- 医院信息 -->
+          <!-- 病人信息 -->
+          <view class="patient-msg">
+            <view class="details">
+              <view>2019.06.24 上午(9:00~9:30）</view>
+              <view>就诊人：王英杰  女  25岁</view>
+            </view>
+            <view class="state">
+              <button bindtap="payOrder" class="btn-pay">支付</button>
+            </view>
+          </view>
+        </view>
+        <view class="order-list-item" bindtap="overdueOrder">
+          <!-- 医院信息 -->
+          <view class="hospital-msg">
+            <view class="hospital-name">陆军特色医学中心（大坪医院）</view>
+            <view class="hospital-department">高血压内分泌门诊</view>
+          </view>
+          <!-- 医院信息 -->
+          <!-- 病人信息 -->
+          <view class="patient-msg">
+            <view class="details">
+              <view>2019.06.24 上午(9:00~9:30）</view>
+              <view>就诊人：王英杰  女  25岁</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 电话订单列表 -->
+  <!-- 加载全部按钮 -->
+  <view class="more" hidden="{{flag}}">
+    <view bindtap="expendAll">
+      <text class="left-arrow">加载全部</text>
+    </view>
+  </view>
+  <!-- 加载全部按钮 -->
+</view>
+<!-- 挂号订单 -->

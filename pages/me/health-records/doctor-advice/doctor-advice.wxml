@@ -1,0 +1,12 @@
+<view class="doctor-advice">
+  <view class='doctor-advice-mbox'>
+    <view class='doctor-advice-textarea'>
+      <textarea placeholder='输入医生嘱咐信息，如饮食和出行注意事项等'></textarea>
+    </view>
+  </view>
+  <view class='doctor-advice-btnbox'>
+    <view class='doctor-advice-btn bgc-blue'>
+      <text>保存</text>
+    </view>  
+  </view>
+</view>

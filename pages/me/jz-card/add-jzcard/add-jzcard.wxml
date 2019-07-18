@@ -1,0 +1,61 @@
+<view class='add-jzcard'>
+  <view class='jzcard-seluser'>
+    <text class='jzcard-seluser-lable'>就诊人</text>
+    <view class='jzcard-seluser-rcon'>
+      <picker bindchange="bindJzrChange" value="{{jzrIndex}}" range="{{zjrArr}}">
+        <view class="picker">
+          {{zjrArr[jzrIndex]}}
+        </view>
+      </picker>
+    </view>
+    <image class='jzcard-seluser-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+  </view>
+  <view class='add-jzcard-mbox'>
+    <view class='add-jzcard-item'>
+      <text class='add-jzcard-label'>医院</text>
+      <view class='add-jzcard-selbox'>
+        <picker bindchange="bindHosChange" value="{{hosIndex}}" range="{{hosArr}}">
+        <view class="picker">
+          {{hosArr[hosIndex]}}
+        </view>
+      </picker>
+      </view>
+      <image class='jzcard-seluser-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+    </view>
+    <view class='add-jzcard-item'>
+      <text class='add-jzcard-label'>卡类型</text>
+      <view class='add-jzcard-selbox'>
+        <picker bindchange="bindTypeChange" value="{{typeIndex}}" range="{{typeArr}}">
+        <view class="picker">
+          {{typeArr[typeIndex]}}
+        </view>
+      </picker>
+      </view>
+      <image class='jzcard-seluser-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+    </view>
+    <view class='add-jzcard-item'>
+      <text class='add-jzcard-label'>卡类型</text>
+      <input class='add-jzcard-input' type="text" placeholder='请输入就诊卡号' />
+    </view>
+
+  </view>
+  <!-- 添加就诊卡时显示 -->
+  <view class='add-jzcard-btnbox'>
+    <view class='add-jzcard-btn bgc-blue'>
+      <text>保存</text>
+    </view>
+  </view>
+  <!-- 编辑就诊卡时显示 -->
+  <view class='add-jzcard-btnbox pd-size'>
+    <view class='add-jzcard-btnitem'>
+      <view class='add-jzcard-btn'>
+        <text>删除</text>
+      </view>
+    </view>
+    <view class='add-jzcard-btnitem'>
+      <view class='add-jzcard-btn bgc-blue'>
+        <text>保存修改</text>
+      </view>
+    </view>
+  </view>
+</view>

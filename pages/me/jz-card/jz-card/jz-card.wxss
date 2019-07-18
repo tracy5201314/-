@@ -1,0 +1,162 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.jz-card{}
+.jzcard-seluser{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.jzcard-seluser-lable{
+  font-size: 28rpx;
+  color: #999;
+}
+.jzcard-seluser-rcon{
+  flex: 1;
+  margin-right: 10rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+}
+.jzcard-seluser-rcon .picker{}
+.jzcard-seluser-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.jzcard-mbox{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.jzcard-list{}
+.jzcard-item{
+  background: #fff;
+  border-radius: 10rpx;
+}
+.jzcard-item-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30rpx 22rpx;
+  border-radius: 10rpx 10rpx 0 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.jzcard-item-top.bgc-blue{
+  background: #1e7df7;
+}
+.jzcard-item-top.bgc-yellow{
+  background: #ffb824;
+}
+.jzcard-item-top.bgc-oran{
+  background: #fd6d49;
+}
+.jzcard-item-hosname{
+  flex: 1;
+  font-size: 32rpx;
+  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jzcard-item-topbtn{
+  display: block;
+  width: 100rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #333;
+  background: #fff;
+  border-radius: 23rpx;
+}
+.jzcard-item-topbtn text{}
+.jzcard-item-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35rpx 22rpx;
+  border-radius: 10rpx 10rpx 0 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.jzcard-item-bottom text{
+  font-size: 28rpx;
+  color: #333;
+}
+.jzcard-item-cardtype{}
+.jzcard-item-cardnum{}
+.jzcard-add-btnbox{
+  margin-top: 50rpx;
+  padding: 30rpx;
+}
+.jzcard-add-btn{
+  display: block;
+  line-height: 82rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  border-radius: 45rpx;
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.jzcard-add-btn text{
+  color: #fff;
+}
+.jzcard-quesheng{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 160rpx;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.jzcard-quesheng-qsimg{
+  display: block;
+  width: 137rpx;
+  height: 120rpx;
+}
+.jzcard-quesheng-title{
+  margin-top: 30rpx;
+  font-weight: 600;
+  font-size: 42rpx;
+  color: #333;
+}
+.jzcard-quesheng-subtitle{
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.jzcard-quesheng-btnbox{
+  margin-top: 50rpx;
+}
+.jzcard-quesheng-btn{
+  display: block;
+  width: 288rpx;
+  line-height: 82rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  border-radius: 45rpx;
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.jzcard-quesheng-btn text{
+  color: #fff;
+}

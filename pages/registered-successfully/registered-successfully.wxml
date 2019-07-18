@@ -1,0 +1,42 @@
+<!-- 挂号成功 -->
+<view class="register-success">
+  <!-- 挂号状态 -->
+  <view class="state">
+    <view class="text">挂号信息提交成功！</view>
+    <view class="tips">预约信息已发送到您的手机，结果以短信为准，请注意查收。如有疑问请拨打4008-115-160</view>
+  </view>
+  <!-- 挂号状态 -->
+  <!-- 挂号信息 -->
+  <view class="msg">
+    <view class="msg-item">
+      <view>就诊医院</view>
+      <view class="text">重庆医科大学附属第一医院</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊科室</view>
+      <view class="text">精神科</view>
+    </view>
+    <view class="msg-item">
+      <view>就诊时间</view>
+      <view class="time">2019.06.24 上午(9:00~9:30）</view>
+    </view>
+    <view class="msg-item">
+      <view>预约医生</view>
+      <view class="text">林朝胜</view>
+    </view>
+  </view>
+  <!-- 挂号信息 -->
+  <!-- 按钮 -->
+  <view class="btn">
+    <button>返回首页</button>
+    <button>查看订单</button>
+  </view>
+  <!-- 按钮 -->
+  <!-- 提示 -->
+  <view class="remind">
+    <view>1、请于就诊当日所约时间段提前30分钟凭身份证（或医保卡或户口本）等身份证明原件准时到医院门诊大厅自助机或挂号窗口取号，过时将会自动作废。</view>
+    <view>2、如姓名、身份证号错误将不能取号。无法前往请至少提前一天17:00前登陆医事通或致电4008115160取消，当天的预约号恕不能退换。如您爽约，网上预约挂号将受影响。</view>
+  </view>
+  <!-- 提示 -->
+</view>
+<!-- 挂号成功 -->

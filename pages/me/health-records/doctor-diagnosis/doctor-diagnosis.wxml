@@ -1,0 +1,12 @@
+<view class="doctor-diagnosis">
+  <view class='doctor-diagnosis-mbox'>
+    <view class='doctor-diagnosis-textarea'>
+      <textarea placeholder='输入医生诊断疾病'></textarea>
+    </view>
+  </view>
+  <view class='doctor-diagnosis-btnbox'>
+    <view class='doctor-diagnosis-btn bgc-blue'>
+      <text>保存</text>
+    </view>  
+  </view>
+</view>

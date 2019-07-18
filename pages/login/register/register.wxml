@@ -1,0 +1,28 @@
+<view class='register'>
+  <view class='register-mbox'>
+    <view class='login-title'>注册</view>
+    <form class='login-form'>
+      <view class="login-inpbox">
+        <input bindinput="inputPhoneNum" value="{{phoneNum}}" placeholder="填写手机号" />
+      </view>
+      <view class="login-inpbox">
+        <input bindinput="inputVerifybtn" value="{{verifyBtn}}" placeholder="验证码" />
+        <view class='register-verifybtn' hover-class="active" hover="true">
+          <text>获取验证码</text>
+        </view>
+      </view>
+      <view class="login-inpbox">
+        <input bindinput="inputPwd" value="{{pwd}}" password="true" placeholder="请输入6-16为密码 ，不能有空格" />
+      </view>
+      <view class="login-btnbox">
+        <view class="btn" hover-class="active" hover="true">
+          <text>申请注册</text>
+        </view>
+      </view>
+    </form>
+    <view class='register-footer'>
+      <view class='register-footer-text'>已有账号，</view>
+      <view class='register-footer-link' catchtap='toLogin'>立即登录</view>
+    </view>
+  </view>
+</view>

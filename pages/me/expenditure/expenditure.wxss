@@ -1,0 +1,96 @@
+page{
+  background: #f7f7f7;
+}
+.expenditure{}
+.expenditure-hdbox{
+  display: flex;
+  padding: 25rpx 30rpx;
+  background: #fff;
+}
+.expenditure-hdtitle{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.expenditure-seldatebox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  margin-left: 20rpx;
+}
+.expenditure-pub-selbox{
+  position: relative;
+  height: 60rpx;
+  padding-left: 25rpx;
+  padding-right: 50rpx;
+  line-height: 60rpx;
+  background: #f7f7f7;
+  border-radius: 6rpx;
+}
+.expenditure-pubsel-arrow{
+  display: block;
+  width: 15rpx;
+  height: 10rpx;
+  margin-top: -3rpx;
+  position: absolute;
+  top: 50%;
+  right: 22rpx;
+}
+.expenditure-selyear{
+  display: flex;
+  font-size: 28rpx;
+  color: #1e7df7;
+}
+.expenditure-selyear-mbox{}
+.expenditure-seldatebox-text{
+  padding: 0 12rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.expenditure-seluserbox{
+  font-size: 28rpx;
+  color: #1e7df7;
+}
+
+
+
+
+
+.expenditure-bdbox{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.expenditure-list{
+  padding: 0 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.expenditure-list-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 34rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.expenditure-list-item:last-child{
+  border-bottom: none;
+}
+.expenditure-list-item text{
+  font-size: 28rpx;
+}
+.expenditure-list-title{
+  color: #333;
+}
+.expenditure-list-date{
+  flex: 1;
+  text-align: center;
+  color: #333;
+}
+.expenditure-list-price{
+  color: #fd6d49;
+}

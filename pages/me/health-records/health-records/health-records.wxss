@@ -1,0 +1,276 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.health-records{
+  position: relative;
+  padding: 30rpx 30rpx 0 30rpx;
+  /* padding: 30rpx 30rpx 160rpx 30rpx; */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.health-records-hd{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.health-records-userinfo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.health-records-tximg{
+  width: 122rpx;
+  height: 122rpx;
+  border: 6rpx solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.health-records-tximg image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.health-records-textcon{
+  flex: 1;
+  margin-left: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.health-records-uname{
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+}
+.health-records-genderage{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5rpx;
+}
+.health-records-genderage-item{}
+.health-records-genderage-item.ml-size{
+  margin-left: 30rpx;
+}
+.health-records-genderage-item text{
+  font-size: 28rpx;
+}
+.health-records-genderage-title{
+  color: #999;
+}
+.health-records-genderage-text{
+  color: #333;
+}
+.health-records-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.health-records-nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.health-records-nav-item{
+  flex: 1;
+  position: relative;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+}
+.health-records-nav-item.active{}
+.health-records-nav-item.active::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  width: 42rpx;
+  height: 4rpx;
+  margin-left: -21rpx;
+  background: #1e7df7;
+}
+.health-records-nav-item.active text{
+  color: #1e7df7;
+}
+.health-records-nav-item text{
+  font-size: 32rpx;
+  color: #333;
+}
+.health-records-bd{
+  display: none;
+  /* position: absolute;
+  top: 306rpx;
+  right: 30rpx;
+  bottom: 160rpx;
+  left: 30rpx;
+  z-index: 2;
+  overflow-y: auto; */
+}
+.health-records-bd.show{
+  display: block;
+}
+/* 病历记录 */
+.medical-record-bd{
+  position: relative;
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.medical-record-list{
+  height: 100%;
+  overflow-y: scroll;
+}
+.medical-record-item{
+  padding: 35rpx 10rpx;
+  border-bottom: 1px solid #eee;
+}
+.medical-record-info1{
+  display: flex;
+}
+.medical-record-info1 text{
+  font-weight: 600;
+  font-size: 34rpx;
+  color: #333;
+}
+.medical-record-info1 text.ml-size{
+  margin-left: 20rpx;
+}
+.medical-record-info2{
+  display: flex;
+  margin-top: 25rpx;
+}
+.medical-record-info2 text{
+  font-size: 28rpx;
+  color: #333;
+}
+.medical-record-info2 text.ml-size{
+  margin-left: 20rpx;
+}
+.medical-record-info3{
+  display: flex;
+  margin-top: 25rpx;
+}
+.medical-record-info3 text{
+  font-size: 28rpx;
+}
+.medical-record-info3-title{
+  color: #999;
+}
+.medical-record-info3-text{
+  color: #666;
+}
+/* 病历缺省 */
+.medical-record-quesheng{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150rpx;
+}
+.medical-record-quesheng-img{
+  display: block;
+  width: 137rpx;
+  height: 120rpx;
+}
+.medical-record-quesheng-text{
+  margin-top: 35rpx;
+  font-weight: 600;
+  font-size: 40rpx;
+  color: #333;
+}
+/* 基本健康信息 */
+.base-jkinfo-bd{
+  position: relative;
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.base-jkinfo-title{
+  line-height: 100rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.base-jkinfo-mbox{}
+.base-jkinfo-mitem{
+  display: flex;
+  justify-content: flex-start;
+  padding: 5rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.base-jkinfo-mitem:last-child{
+  border-bottom: none;
+}
+.base-jkinfo-mitem-title{
+  padding: 18rpx 0;
+  line-height: 52rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.base-jkinfo-mitem-rbox{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.base-jkinfo-mitem-state{
+  width: auto;
+  min-width: 140rpx;
+  height: 52rpx;
+  margin: 18rpx 0 18rpx 30rpx;
+  line-height: 44rpx;
+  padding: 0 14rpx;
+  text-align: center;
+  border: 1px solid #1e7df7;
+  border-radius: 26rpx;
+}
+.base-jkinfo-mitem-state text{
+  font-size: 28rpx;
+  color: #1e7df7;
+}
+/* 底部按钮 */
+.health-records-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed;
+  right: 30rpx;
+  bottom: 0;
+  left: 30rpx;
+  z-index: 5; */
+  padding: 30rpx 0;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.health-records-btn{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 45rpx;
+}
+.health-records-btn.bgc-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.health-records-btn text{
+  color: #fff;
+}

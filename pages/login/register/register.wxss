@@ -1,0 +1,64 @@
+page{
+  background: #fff;
+}
+.register{}
+.register-mbox{
+  padding: 120rpx 30rpx 20rpx 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.login-title{
+  font-weight: 600;
+  font-size: 46rpx;
+  color: #000;
+}
+.login-inpbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 0;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.login-inpbox input{
+  flex: 1;
+  font-size: 30rpx;
+}
+.login-btnbox{}
+.login-btnbox .btn{
+  display: block;
+  margin-top: 110rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.login-btnbox text{
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #fff;
+}
+.register-verifybtn{
+  width: 190rpx;
+  padding-right: 10rpx;
+  text-align: right;
+  font-size: 30rpx;
+  color: #1e7df7;
+}
+.register-footer{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-footer-text{
+  font-size: 30rpx;
+  color: #999;
+}
+.register-footer-link{
+  font-size: 30rpx;
+  color: #1e7df7;
+}

@@ -1,0 +1,62 @@
+<view class='expenditure'>
+  <view class='expenditure-hdbox'>
+    <text class='expenditure-hdtitle'>筛选</text>
+    <view class='expenditure-seldatebox'>
+      <view class='expenditure-selyear'>
+        <view class='expenditure-selyear-mbox'>
+          <picker class='expenditure-pub-selbox' mode="date" fields="year" value="{{year}}" start="2019-07-09" end="2020-09-01" bindchange="bindYearChange">
+            <view class="picker">
+              {{year}}
+            </view>
+            <image class='expenditure-pubsel-arrow' src='../../../images/expenditure-arrow-01.png'></image>
+          </picker>
+        </view>
+        <text class='expenditure-seldatebox-text'>年</text>
+      </view>
+      <view class='expenditure-selyear'>
+        <view class='expenditure-selyear-mbox'>
+          <picker class='expenditure-pub-selbox' bindchange="bindMonthChange" value="{{monthIndex}}" range="{{monthArr}}">
+            <view class="picker">
+              <text style='{{monthIndex>8?"display:none":""}}'>0</text>{{monthArr[monthIndex]}}
+            </view>
+            <image class='expenditure-pubsel-arrow' src='../../../images/expenditure-arrow-01.png'></image>
+          </picker>
+        </view>
+        <text class='expenditure-seldatebox-text'>月</text>
+      </view>
+    </view>
+    <view class='expenditure-seluserbox'>
+      <picker class='expenditure-pub-selbox' bindchange="bindUserChange" value="{{userIndex}}" range="{{userArr}}">
+        <view class="picker">
+          {{userArr[userIndex]}}
+        </view>
+        <image class='expenditure-pubsel-arrow' src='../../../images/expenditure-arrow-01.png'></image>
+      </picker>
+    </view>
+  </view>
+  <view class='expenditure-bdbox'>
+    <view class='expenditure-list'>
+      <view class='expenditure-list-item'>
+        <text class='expenditure-list-title'>预约挂号</text>
+        <text class='expenditure-list-date'>2019.09.05</text>
+        <text class='expenditure-list-price'>22.00元</text>
+      </view>
+      <view class='expenditure-list-item'>
+        <text class='expenditure-list-title'>图文咨询</text>
+        <text class='expenditure-list-date'>2019.09.05</text>
+        <text class='expenditure-list-price'>22.00元</text>
+      </view>
+      <view class='expenditure-list-item'>
+        <text class='expenditure-list-title'>电话咨询</text>
+        <text class='expenditure-list-date'>2019.09.05</text>
+        <text class='expenditure-list-price'>22.00元</text>
+      </view>
+      <view class='expenditure-list-item'>
+        <text class='expenditure-list-title'>处方订单</text>
+        <text class='expenditure-list-date'>2019.09.05</text>
+        <text class='expenditure-list-price'>22.00元</text>
+      </view>
+
+    </view>
+  </view>
+</view>

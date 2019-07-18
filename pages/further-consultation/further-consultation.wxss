@@ -1,0 +1,261 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+/* radio 样式修改 */
+/* 未选中的 背景样式 */
+radio .wx-radio-input{
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+}
+/* 选中后的 小圆点样式 */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  width: 16rpx;
+  height: 16rpx;
+  font-size: 0rpx;
+  background: #fff;
+  border-radius: 50%;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+.further-consultation{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.further-consultation-mbox{}
+.further-consultation-item{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* 选择患者 */
+.further-consultation-seluser{
+  padding-top: 25rpx;
+  padding-bottom: 40rpx;
+}
+.further-consultation-seluser-tip{
+  padding: 15rpx 24rpx;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #ffa024;
+  background: #f7f7f7;
+  border-radius: 6rpx;
+}
+.further-consultation-userlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.further-consultation-userlist-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52rpx;
+  padding: 0 30rpx;
+  margin: 15rpx 30rpx 15rpx 0;
+  background: #eee;
+  border-radius: 24rpx;
+}
+.further-consultation-userlist-item:last-child{
+  margin-right: 0;
+}
+.further-consultation-userlist-item.active{
+  background: #1e7df7;
+}
+.further-consultation-userlist-item.active text{
+  color: #fff;
+}
+.further-consultation-userlist-item.oran{
+  background: #ffb824;
+}
+.further-consultation-userlist-item.oran text{
+  color: #fff;
+}
+.further-consultation-userlist-item text{
+  font-size: 28rpx;
+  color: #666;
+}
+.further-consultation-userlist-addicon{
+  display: block;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 5rpx;
+}
+/* 患者信息 */
+.pub-icon-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.pub-radiobox{
+  margin-right: 30rpx;
+}
+.pub-radiobox:last-child{
+  margin-right: 0;
+}
+.pub-radiobox-text{
+  flex: 1;
+  font-size: 28rpx;
+  color: #999;
+}
+.further-consultation-userinfo{}
+.further-consultation-userinfo-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 34rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.further-consultation-userinfo-ilabel{
+  font-size: 28rpx;
+  color: #999;
+}
+.further-consultation-userinfo-irbox{
+  flex: 1;
+  margin-right: 15rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+}
+.further-consultation-userinfo-irbox .radio-group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.further-consultation-userinfo-irbox .picker{}
+.further-consultation-userinfo-textabox{}
+.further-consultation-userinfo-t-label{
+  padding: 34rpx 0;
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+.further-consultation-userinfo-t-textarea{
+  padding: 30rpx 0;
+}
+.further-consultation-userinfo-t-textarea textarea{
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+/* 诊后样式 */
+.further-consultation-advice{
+  padding-bottom: 30rpx;
+}
+.further-consultation-advice-title{
+  padding: 34rpx 0;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.further-consultation-advice-mcont{}
+.further-consultation-advice-mcont .radio-group{}
+.further-consultation-advice-item{
+  padding: 34rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.further-consultation-advice-item label{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pub-upload-tip{
+  padding: 5rpx 25rpx;
+  font-size: 24rpx;
+  color: #bbb;
+}
+/* 上传图片样式 */
+.pub-upload{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25rpx 0 25rpx 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pub-upload-btnbox{
+  padding-top: 20rpx;
+}
+.pub-upload-btnbox image{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+}
+.pub-upload-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pub-upload-item{
+  position: relative;
+  padding-top: 20rpx;
+  padding-right: 35rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pub-upload-item-img{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 3rpx;
+}
+.pub-upload-item-del{
+  position: absolute;
+  top: 1rpx;
+  right: 15rpx;
+  z-index: 5;
+}
+.pub-upload-item-del image{
+  display: block;
+  width: 51rpx;
+  height: 51rpx;
+}
+
+
+
+.further-consultation-advice-upload{}
+.further-consultation-advice-notice{
+  padding: 30rpx 25rpx;
+  margin-top: 25rpx;
+  font-size: 26rpx;
+  color: #fd6d49;
+  background: #f7f7f7;
+  border-radius: 6rpx;
+}
+
+
+
+
+
+.further-consultation-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.further-consultation-btn{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 45rpx;
+}
+.further-consultation-btn.bgc-blue{
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.further-consultation-btn text{
+  color: #fff;
+}

@@ -1,0 +1,195 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.m-record-detail{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.m-record-detail-mbox{}
+.m-record-detail-item{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.m-record-detail-item-title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 34rpx 0;
+}
+.m-record-detail-item-title.bo-line{
+  border-bottom: 1px solid #eee;
+}
+.m-record-detail-item-tlabel{
+  flex: 1;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+}
+.m-record-detail-item-ttext{
+  margin-right: 15rpx;
+  font-size: 28rpx;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-record-detail-item-ttext.col-333{
+  color: #333;
+}
+.m-record-detail-item-tarrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.m-record-detail-textbox{
+  /* display: flex; */
+  padding: 30rpx 0;
+  line-height: 42rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.m-record-detail-imgbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.m-record-detail-imgbox-item{
+  margin-right: 37rpx;
+  margin-bottom: 30rpx;
+}
+.m-record-detail-imgbox-item:last-child{
+  margin-right: 0;
+}
+.m-record-detail-imgbox-item image{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  border: 4rpx;
+}
+/* 基本信息 */
+.m-record-baseinfo{}
+.m-record-baseinfo-title{
+  line-height: 100rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.m-record-baseinfo-mbox{}
+.m-record-baseinfo-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.m-record-baseinfo-item:last-child{
+  border-bottom: none;
+}
+.m-record-baseinfo-item text{
+  font-size: 28rpx;
+}
+.m-record-baseinfo-label{
+  color: #999;
+}
+.m-record-baseinfo-text{
+  flex: 1;
+  margin-left: 10rpx;
+  text-align: right;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 病情主诉 */
+.m-record-description{}
+/* .医嘱 */
+.m-record-advice{}
+/* 检查检验 */
+.m-record-inspect{}
+/* 用药及处方 */
+.m-record-prescription{}
+.m-record-prescription-mbox{
+  padding: 5rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.m-record-prescription-item{
+  padding: 30rpx 0;
+}
+.m-record-prescription-item-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.m-record-prescription-item-name{
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-record-prescription-item-num{
+  width: 70rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.m-record-prescription-item-bottom{
+  display: flex;
+  margin-top: 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-record-prescription-item-bchild{
+  display: flex;
+}
+.m-record-prescription-item-bchild.ml-size{
+  margin-left: 15rpx;
+}
+.m-record-prescription-item-bchild text{
+  font-size: 26rpx;
+  color: #999;
+}
+.m-record-prescription-item-blabel{}
+.m-record-prescription-item-btext{}
+
+
+
+.m-record-detail-btnbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.m-record-detail-btn{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 45rpx;
+}
+.m-record-detail-btn.bgc-red{
+  background: -webkit-linear-gradient(left,#fcb8a6,#fd6e4b);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.m-record-detail-btnbox text{
+  color: #fff;
+}

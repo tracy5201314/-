@@ -1,0 +1,29 @@
+<view class="add-address">
+  <form class='address-form'>
+    <view class='address-mbox'>
+      <view class='address-inpbox'>
+        <text class='address-inpbox-lable'>收货人</text>
+        <input class='address-inpbox-input' type="text" bindinput="inputUserName" value='{{userName}}' placeholder='请输入收货人姓名' />
+      </view>
+      <view class='address-inpbox'>
+        <text class='address-inpbox-lable'>联系电话</text>
+        <input class='address-inpbox-input' type="text" bindinput="inputPhoneNum" value='{{phoneNum}}' placeholder='请输入联系电话' />
+      </view>
+      <view class='address-inpbox'>
+        <text class='address-inpbox-lable'>所在区域</text>
+        <input class='address-inpbox-input' type="text" bindinput="inputArea" value='{{area}}' placeholder='例如：北京市-北京市-朝阳区' />
+      </view>
+      <view class='address-textabox'>
+        <text class='address-textabox-lable'>详细地址</text>
+        <view class='address-textabox-textarea'>
+          <textarea bindinput="inputDetail" value='{{detail}}' placeholder='请填写详细地址，街道、楼牌号' ></textarea>
+        </view>
+      </view>
+    </view>
+    <view class='address-btnbox'>
+      <view class='address-btn'>
+        <text>保存</text>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,7 +1,12 @@
 {
   "pages": [
+    "pages/registered-order/registered-order",
+    "pages/registered-order-details/registered-order-details",    
+    "pages/registered-successfully/registered-successfully",
+    "pages/consult-doctor/consult-doctor",
     "pages/service-purchase-success/service-purchase-success",
     "pages/telephone-consultation-details/telephone-consultation-details",
+    "pages/index/index",
     "pages/telephone-consultation/telephone-consultation",
     "pages/telephone-orders/telephone-orders",
     "pages/graphic-order/graphic-order",
@@ -9,7 +14,29 @@
     "pages/graphic-order-details/graphic-order-details",
     "pages/selection-departments/selection-departments",
     "pages/selection-hospitals/selection-hospitals",
-    "pages/index/index",
+    "pages/login/login/login",
+    "pages/login/register/register",
+    "pages/login/forgot-password/forgot-password",
+    "pages/further-consultation/further-consultation",
+    "pages/me/mine/mine",
+    "pages/me/expenditure/expenditure",
+    "pages/me/address/address-manage/address-manage",
+    "pages/me/address/add-address/add-address",
+    "pages/me/contacts/contacts/contacts",
+    "pages/me/contacts/add-contacts/add-contacts",
+    "pages/me/jz-card/jz-card/jz-card",
+    "pages/me/jz-card/add-jzcard/add-jzcard",
+    "pages/me/health-records/add-record/add-record",
+    "pages/me/health-records/edit-jkinfo/edit-jkinfo",
+    "pages/me/health-records/health-records/health-records",
+    "pages/me/health-records/doctor-diagnosis/doctor-diagnosis",
+    "pages/me/health-records/doctor-advice/doctor-advice",
+    "pages/me/health-records/medical-record-detail/medical-record-detail",
+    "pages/me/health-records/inspect/inspect",
+    "pages/me/health-records/description/description",
+    "pages/me/health-records/prescription/prescription",
+    "pages/cf-order/logistics/logistics",
+    "pages/cf-order/store-choice/store-choice",
     "pages/logs/logs",
     "pages/make-an-appointment/make-an-appointment"    
   ],
@@ -18,6 +45,32 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#414753",
+    "selectedColor": "#358ae4",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index-nav-home.png",
+        "selectedIconPath": "images/index-nav-home-hover.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "images/index-nav-shoppingmall.png",
+        "selectedIconPath": "images/index-nav-shoppingmall-hover.png"
+      },
+      {
+        "pagePath": "pages/me/mine/mine",
+        "text": "个人中心",
+        "iconPath": "images/index-nav-mine.png",
+        "selectedIconPath": "images/index-nav-mine-hover.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

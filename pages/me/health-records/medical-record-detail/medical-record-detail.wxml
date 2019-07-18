@@ -1,0 +1,185 @@
+<view class='m-record-detail'>
+  <view class='m-record-detail-mbox'>
+    <!-- 基本信息 -->
+    <view class='m-record-detail-item'>
+      <view class='m-record-baseinfo'>
+        <view class='m-record-baseinfo-title'>请完善病历详细信息，方便医生查看</view>
+        <view class='m-record-baseinfo-mbox'>
+          <view class='m-record-baseinfo-item'>
+            <text class='m-record-baseinfo-label'>就诊时间</text>
+            <text class='m-record-baseinfo-text'>2019.06.23</text>
+          </view>
+          <view class='m-record-baseinfo-item'>
+            <text class='m-record-baseinfo-label'>医院</text>
+            <text class='m-record-baseinfo-text'>重庆市妇幼保健院</text>
+          </view>
+          <view class='m-record-baseinfo-item'>
+            <text class='m-record-baseinfo-label'>科室</text>
+            <text class='m-record-baseinfo-text'>内分泌科</text>
+          </view>
+          <view class='m-record-baseinfo-item'>
+            <text class='m-record-baseinfo-label'>医生</text>
+            <text class='m-record-baseinfo-text'>张朝林</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 病情主诉 -->
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>病情主诉</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='m-record-description'>
+        <view class='m-record-detail-textbox'>
+          常自诉咽干，发痒，异物感，刺激性咳嗽，口臭等轻微症状。如扁桃体过度肥大，可能出现呼吸、吞咽或言语共鸣障碍。
+        </view>
+        <view class='m-record-detail-imgbox'>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 医生诊断 -->
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>医生诊断</text>
+        <text class='m-record-detail-item-ttext col-333'>扁桃体发炎</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+    </view>
+    <!-- 医嘱 -->
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>医嘱</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='m-record-advice'>
+        <view class='m-record-detail-textbox'>
+          忌食辛辣刺激食物、忌烟酒、忌食炙烤、肥腻食物、忌饮生冷冰冻食物、忌食鱼腥发物、忌食各种温阳补肾之品。
+        </view>
+      </view>
+    </view>
+    <!-- 检查检验 -->
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>检查检验</text>
+        <text class='m-record-detail-item-ttext'>非必填</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='m-record-inspect'>
+        <view class='m-record-detail-imgbox mt-size'>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 用药及处方 -->
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>用药及处方</text>
+        <text class='m-record-detail-item-ttext'>非必填</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='m-record-prescription'>
+        <view class='m-record-detail-textbox'>
+          建议口服消炎药，清热去火的药物及咽喉含片进行治疗，比如头孢克洛胶囊，蓝芩口服液，西瓜霜含片等。
+        </view>
+        <view class='m-record-detail-imgbox'>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='m-record-detail-item mt-size'>
+      <view class='m-record-detail-item-title bo-line'>
+        <text class='m-record-detail-item-tlabel'>用药及处方</text>
+        <text class='m-record-detail-item-ttext'>非必填</text>
+        <image class='m-record-detail-item-tarrow' src='../../../../images/contacts-icon-arrow.png'></image>
+      </view>
+      <view class='m-record-prescription'>
+        <view class='m-record-prescription-mbox'>
+          <view class='m-record-prescription-item'>
+            <view class='m-record-prescription-item-top'>
+              <view class='m-record-prescription-item-name'>鸿羽  奥美拉唑肠溶胶囊  20mg*21粒/盒</view>
+              <text class='m-record-prescription-item-num'>x2</text>
+            </view>
+            <view class='m-record-prescription-item-bottom'>
+              <view class='m-record-prescription-item-bchild'>
+                <text class='m-record-prescription-item-blabel'>用法：</text>
+                <text class='m-record-prescription-item-btext'>每日1次/1粒；</text>
+              </view>
+              <view class='m-record-prescription-item-bchild ml-size'>
+                <text class='m-record-prescription-item-blabel'>用法：</text>
+                <text class='m-record-prescription-item-btext'>早晚口服；</text>
+              </view>
+              <view class='m-record-prescription-item-bchild ml-size'>
+                <text class='m-record-prescription-item-blabel'>周期：</text>
+                <text class='m-record-prescription-item-btext'>3天</text>
+              </view>
+            </view>
+          </view>
+          <view class='m-record-prescription-item'>
+            <view class='m-record-prescription-item-top'>
+              <view class='m-record-prescription-item-name'>鸿羽  奥美拉唑肠溶胶囊  20mg*21粒/盒</view>
+              <text class='m-record-prescription-item-num'>x2</text>
+            </view>
+            <view class='m-record-prescription-item-bottom'>
+              <view class='m-record-prescription-item-bchild'>
+                <text class='m-record-prescription-item-blabel'>用法：</text>
+                <text class='m-record-prescription-item-btext'>每日1次/1粒；</text>
+              </view>
+              <view class='m-record-prescription-item-bchild ml-size'>
+                <text class='m-record-prescription-item-blabel'>用法：</text>
+                <text class='m-record-prescription-item-btext'>早晚口服；</text>
+              </view>
+              <view class='m-record-prescription-item-bchild ml-size'>
+                <text class='m-record-prescription-item-blabel'>周期：</text>
+                <text class='m-record-prescription-item-btext'>3天</text>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <view class='m-record-detail-imgbox mt-size'>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+          <view class='m-record-detail-imgbox-item'>
+            <image src='../../../../images/medical-record-detail-img01.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class='m-record-detail-btnbox'>
+    <view class='m-record-detail-btn bgc-red'>
+      <text>删除</text>
+    </view>  
+  </view>
+</view>

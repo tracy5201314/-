@@ -1,0 +1,67 @@
+<view class="address-manage">
+  <view class='address-list'>
+    <radio-group class="radio-group address-radio-group">
+      <view class='address-item'>
+        <view class='address-item-info'>
+          <view class='address-item-text1'>
+            <text class='address-item-uname'>墨芃芃</text>
+            <text class='address-item-phonenum'>15023392654</text>
+          </view>
+          <view class='address-item-text2'>
+            重庆重庆市九龙坡区石桥铺街道重庆市九龙坡区石桥 铺科园一路116号火炬大厦2号楼15-1
+          </view>
+        </view>
+        <view class='address-item-tool'>
+          <view class='address-item-radiobox'>
+            <label class="radio">
+              <radio value="001" checked="true" color="#1e7df7"/>默认地址
+            </label>
+          </view>
+          <view class='address-item-tool-r'>
+            <view class='address-item-edit'>
+              <image src='../../../../images/address-icon-edit.png'></image>
+              <text>编辑</text>
+            </view>
+            <view class='address-item-del'>
+              <image src='../../../../images/address-icon-del.png'></image>
+              <text>删除</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='address-item'>
+        <view class='address-item-info'>
+          <view class='address-item-text1'>
+            <text class='address-item-uname'>墨芃芃</text>
+            <text class='address-item-phonenum'>15023392654</text>
+          </view>
+          <view class='address-item-text2'>
+            重庆重庆市九龙坡区石桥铺街道重庆市九龙坡区石桥 铺科园一路116号火炬大厦2号楼15-1
+          </view>
+        </view>
+        <view class='address-item-tool'>
+          <view class='address-item-radiobox'>
+            <label class="radio">
+              <radio value="001" color="#1e7df7"/>默认地址
+            </label>
+          </view>
+          <view class='address-item-tool-r'>
+            <view class='address-item-edit'>
+              <image src='../../../../images/address-icon-edit.png'></image>
+              <text>编辑</text>
+            </view>
+            <view class='address-item-del'>
+              <image src='../../../../images/address-icon-del.png'></image>
+              <text>删除</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+  <view class='address-addbox'>
+    <view class='address-addbtn' catchtap='addAddress'>
+      <text>新增地址</text>
+    </view>
+  </view>
+</view>

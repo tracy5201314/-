@@ -1,0 +1,253 @@
+page{
+  background: #f7f7f7;
+}
+.mt-size{
+  margin-top: 30rpx;
+}
+.mine{
+  padding-bottom: 50rpx;
+}
+.mine-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30rpx;
+  background: #4a83ec;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mine-tximg{
+  width: 122rpx;
+  height: 122rpx;
+  border: 6rpx solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.mine-tximg image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mine-name{
+  flex: 1;
+  margin-left: 20rpx;
+  font-weight: 600;
+  font-size: 34rpx;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mine-info-btnbox{}
+.mine-info-logout{
+  width: 136rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #1e7df7;
+  background: #fff;
+  border-radius: 22rpx;
+}
+.mine-consume{
+  position: relative;
+}
+.mine-consume-bgblue{
+  width: 100%;
+  height: 76rpx;
+  background: #4a83ec;
+}
+.mine-consume-bgtransp{
+  width: 100%;
+  height: 44rpx;
+}
+.mine-consume-mbox{
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  bottom: 0;
+  left: 30rpx;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120rpx;
+  background: #fff;
+  border-radius: 12rpx;
+}
+.mine-consume-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120rpx;
+}
+.mine-consume-item-title{
+  font-weight: 600;
+  font-size: 30rpx;
+  color: #333;
+}
+.mine-consume-item-subtitle{
+  margin-top: 15rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.mine-pdsize{
+  position: relative;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mine-menu{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mine-menu-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 28rpx 2rpx 28rpx 10rpx;
+  border-bottom: 1px solid #eee;
+}
+.mine-menu-item:last-child{
+  border-bottom: none;
+}
+.mine-menu-item text{
+  flex: 1;
+  margin-left: 25rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.mine-menu-icon{
+  display: block;
+  width: 38rpx;
+  height: 44rpx;
+}
+.mine-menu-arrow{
+  display: block;
+  width: 13rpx;
+  height: 26rpx;
+}
+.mine-archives{
+  padding: 0 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mine-archives-swiper{
+  height: 484rpx;
+}
+.mine-archives-swiperitem{}
+.mine-archives-title{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.mine-archives-mbox{
+  padding: 40rpx 0;
+}
+.mine-archives-userinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mine-archives-userinfo text{
+  font-size: 28rpx;
+  color: #333;
+}
+.mine-archives-uname{}
+.mine-archives-uage{
+  margin-left: 20rpx;
+}
+.mine-archives-gender{
+  margin-left: 20rpx;
+}
+.mine-archives-icon{
+  width: 82rpx;
+  height: 32rpx;
+  margin-left: 20rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #ff9e2b;
+  border-radius: 17rpx;
+  border: 1px solid #ff9e2b;
+}
+.mine-archives-detail{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.mine-archives-detailitem{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mine-archives-detailitem-title{
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #333;
+}
+.mine-archives-detailitem-subtitle{
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.mine-archives-detailitem-btn{
+  width: 232rpx;
+  height: 57rpx;
+  margin-top: 30rpx;
+  line-height: 57rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 1rpx solid #eee;
+  border-radius: 29rpx;
+}
+.mine-archives-detailitem-btn.col-green{
+  color: #40d0ad;
+  border-color: #40d0ad;
+}
+.mine-archives-detailitem-btn.col-blue{
+  color: #1e7df7;
+  border-color: #1e7df7;
+}
+.mine-archives-quesheng{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mine-archives-qsimg{
+  display: block;
+  width: 137rpx;
+  height: 120rpx;
+}
+.mine-archives-text{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.mine-archives-btnbox{}
+.mine-archives-btn{
+  width: 266rpx;
+  height: 57rpx;
+  margin-top: 30rpx;
+  line-height: 57rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #1e7df7;
+  border: 1px solid #1e7df7;
+  border-radius: 29rpx;
+}

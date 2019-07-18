@@ -1,0 +1,83 @@
+<view class='edit-jkinfo'>
+  <view class='edit-jkinf-mbox'>
+    <view class='edit-jkinf-mtitle'>信息仅供主治医师查看，请认真填写</view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>婚姻状况</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{hunyinArr}}" wx:for-index="index" wx:key="key" wx:for-item="item">
+          <view class='edit-jkinf-item-option {{hunyinIndex==index?"active":""}}' bindtap="tapChangeHy" data-index="{{index}}">
+            <text>{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>生育状况</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{shengyuArr}}" wx:for-index="index" wx:key="key" wx:for-item="item">
+          <view class='edit-jkinf-item-option {{shengyuIndex==index?"active":""}}' bindtap="tapChangeSy" data-index="{{index}}">
+            <text>{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>手术或外伤</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{shoushuArr}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+          <view class='edit-jkinf-item-option {{item.state==1?"active":""}}' bindtap="tapChangeSs" data-index="{{index}}">
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='edit-jkinf-item-textarea'>
+        <textarea placeholder='可输入补充你的手术和外伤信息'></textarea>
+      </view>
+    </view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>药物过敏</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{guominArr}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+          <view class='edit-jkinf-item-option {{item.state==1?"active":""}}' bindtap="tapChangeGm" data-index="{{index}}">
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='edit-jkinf-item-textarea'>
+        <textarea placeholder='可输入补充你的食物或接触物过敏信息'></textarea>
+      </view>
+    </view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>家族病史</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{bingshiArr}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+          <view class='edit-jkinf-item-option {{item.state==1?"active":""}}' bindtap="tapChangeBs" data-index="{{index}}">
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='edit-jkinf-item-textarea'>
+        <textarea placeholder='可输入补充你的家族病史信息'></textarea>
+      </view>
+    </view>
+    <view class='edit-jkinf-item'>
+      <view class='edit-jkinf-item-title'>个人习惯</view>
+      <view class='edit-jkinf-item-cont'>
+        <view class='edit-jkinf-item-optiongroup' wx:for="{{xiguanArr}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+          <view class='edit-jkinf-item-option {{item.state==1?"active":""}}' bindtap="tapChangeXg" data-index="{{index}}">
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='edit-jkinf-item-textarea'>
+        <textarea placeholder='可输入补充你的个人习惯信息'></textarea>
+      </view>
+    </view>
+
+  </view>
+  <view class='edit-jkinfo-btnbox'>
+    <view class='edit-jkinfo-btn bgc-blue'>
+      <text>保存</text>
+    </view>  
+  </view>
+</view>

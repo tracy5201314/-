@@ -1,0 +1,90 @@
+<view class='c-doctor'>
+  <scroll-view scroll-y style="height: {{height?height+'px':'auto'}}">
+    <view class='c-doctor-mbox' id='mBox'>
+      <!-- 时间 -->
+        <view class='dialog-time'>
+          <text>2017-10-14 08:20</text>
+        </view>
+        <!-- 左边 -->
+        <view class='dialog-item l'>
+          <view class='dialog-item-mbox'>
+            <image class='dialog-item-tx' src='../../images/consult-tx-doc.png'></image>
+            <view class='dialog-item-msgbox'>
+              <view class='dialog-item-msgbox-text'>
+                <view class='dialog-item-info1'>
+                  我给你动的刀子你放心，复诊可以先检查哈手术伤口里面，照个片，帮我找找我的钳子
+                </view>
+                <image class='dialog-item-arrow l' src='../../images/consult-arrow-white.png'></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 右边 -->
+        <view class='dialog-item r'>
+          <view class='dialog-item-mbox'>
+            <view class='dialog-item-msgbox'>
+              <view class='dialog-item-msgbox-text'>
+                <view class='dialog-item-img'>
+                  <image src='../../images/home-article-img01.png' mode="aspectFill"></image>
+                </view>
+                <view class='dialog-item-info1'>
+                  我给你动的刀子你放心，复诊可以先检查哈手术伤口里面，照个片，帮我找找我的钳子
+                </view>
+                <image class='dialog-item-arrow r' src='../../images/consult-arrow-blue.png'></image>
+              </view>
+            </view>
+            <image class='dialog-item-tx' src='../../images/consult-tx-user.png'></image>
+          </view>
+        </view>
+        <!-- 左边 -->
+        <view class='dialog-item l'>
+          <view class='dialog-item-mbox'>
+            <image class='dialog-item-tx' src='../../images/consult-tx-doc.png'></image>
+            <view class='dialog-item-msgbox'>
+              <view class='dialog-item-msgbox-text'>
+                <view class='dialog-item-prescription'>
+                  <view class='dialog-item-prescription-hd'>
+                    <view class='dialog-item-prescription-link'>查看处方</view>
+                  </view>
+                  <view class='dialog-item-prescription-bd'>
+                    <view class='dialog-item-prescription-item'>
+                      <text class='dialog-item-prescription-title'>临床诊断：</text>
+                      <text class='dialog-item-prescription-text'>感冒</text>
+                    </view>
+                    <view class='dialog-item-prescription-item'>
+                      <text class='dialog-item-prescription-title'>药种：</text>
+                      <text class='dialog-item-prescription-text'>共1种药</text>
+                    </view>
+                    <view class='dialog-item-prescription-item'>
+                      <text class='dialog-item-prescription-title'>注：</text>
+                      <text class='dialog-item-prescription-text'>处方当日有效，且只能购买一次，失效后需重新。</text>
+                    </view>
+                  </view>
+                </view>
+                <image class='dialog-item-arrow l' src='../../images/consult-arrow-white.png'></image>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </scroll-view>
+  <!-- footer -->
+  <view class='dialog-footer'>
+    <view class='dialog-footer-mbox'>
+      <view class='dialog-footer-hd'>
+        <view class='dialog-footer-textbox'>
+          <textarea></textarea>
+        </view>
+      </view>
+      <view class='dialog-footer-bd'>
+        <image class='dialog-footer-biaoqing' src='../../images/consult-icon-bq.png'  bindtap="chooseIcon"></image>
+        <image class='dialog-footer-photo' src='../../images/consult-icon-photo.png'  bindtap="chooseImage"></image>
+        <view class='dialog-footer-btnbox'>
+          <view class='dialog-footer-btn'>
+            发送
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

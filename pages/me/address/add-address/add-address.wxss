@@ -1,0 +1,69 @@
+page{
+  background: #f7f7f7;
+}
+.add-address{
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.address-mbox{
+  padding: 0 22rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.address-inpbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.address-inpbox-lable{
+  font-size: 28rpx;
+  color: #999;
+}
+.address-inpbox-input{
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  color: #333;
+}
+.address-textabox{}
+.address-textabox-lable{
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+.address-textabox-textarea{
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.address-textabox-textarea textarea{
+  height: 140rpx;
+  font-size: 28rpx;
+  color: #333;
+  white-space: normal;
+}
+.address-btnbox{
+  margin-top: 80rpx;
+}
+.address-btn{
+  display: block;
+  margin-top: 110rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  background: -webkit-linear-gradient(left,#52a3ff,#1f7ef7);
+  box-shadow: 0rpx 0rpx 10rpx rgba(185,215,253,1);
+}
+.address-btn text{
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #fff;
+}

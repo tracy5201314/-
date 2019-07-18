@@ -1,0 +1,67 @@
+<view class='jz-card'>
+  <!-- 有就诊卡 -->
+  <view wx:if="{{jzcNum>0}}">
+    <view class='jzcard-seluser'>
+      <text class='jzcard-seluser-lable'>就诊人</text>
+      <view class='jzcard-seluser-rcon'>
+        <picker bindchange="bindJzrChange" value="{{jzrIndex}}" range="{{zjrArr}}">
+          <view class="picker">
+            {{zjrArr[jzrIndex]}}
+          </view>
+        </picker>
+      </view>
+      <image class='jzcard-seluser-arrow' src='../../../../images/contacts-icon-arrow.png'></image>
+    </view>
+    <view class='jzcard-mbox'>
+      <view class='jzcard-list'>
+        <view class='jzcard-item mt-size'>
+          <view class='jzcard-item-top bgc-blue'>
+            <text class='jzcard-item-hosname'>重庆医科大学附属儿童医院</text>
+          </view>
+          <view class='jzcard-item-bottom'>
+            <text class='jzcard-item-cardtype'>就诊卡</text>
+            <text class='jzcard-item-cardnum'>124225</text>
+          </view>
+        </view>
+        <view class='jzcard-item mt-size'>
+          <view class='jzcard-item-top bgc-yellow'>
+            <text class='jzcard-item-hosname'>陆军军医大学大坪医院</text>
+          </view>
+          <view class='jzcard-item-bottom'>
+            <text class='jzcard-item-cardtype'>医院ID</text>
+            <text class='jzcard-item-cardnum'>124225</text>
+          </view>
+        </view>
+        <view class='jzcard-item mt-size'>
+          <view class='jzcard-item-top bgc-oran'>
+            <text class='jzcard-item-hosname'>重庆市妇幼保健院</text>
+            <view class='jzcard-item-topbtn'>
+              <text>充值</text>
+            </view>
+          </view>
+          <view class='jzcard-item-bottom'>
+            <text class='jzcard-item-cardtype'>医保卡</text>
+            <text class='jzcard-item-cardnum'>124225</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class='jzcard-add-btnbox'>
+      <view class='jzcard-add-btn' catchtap='toAddJzcard'>
+        <text>添加</text>
+      </view>
+    </view>
+  </view>
+  <!-- 缺省显示 -->
+  <view class='jzcard-quesheng' wx:if="{{jzcNum===0}}">
+    <image class='jzcard-quesheng-qsimg' src='../../../../images/mine-quesheng-01.png'></image>
+    <text class='jzcard-quesheng-title'>暂无可选择的就诊人</text>
+    <text class='jzcard-quesheng-subtitle'>是否立即前往【家庭联系人】页面添加成员！</text>
+    <view class='jzcard-quesheng-btnbox'>
+      <view class='jzcard-quesheng-btn'>
+        <text>立即前往</text>
+      </view>
+    </view>
+  </view>
+</view>

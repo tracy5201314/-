@@ -1,0 +1,112 @@
+.register-success {
+  padding: 30rpx;
+}
+
+/* 状态 */
+
+.register-success .state {
+  padding: 56rpx 0 32rpx;
+  background-color: #e0efff;
+  border-radius: 12rpx 12rpx 0rpx 0rpx;
+}
+
+.register-success .state .text {
+  font-size: 42rpx;
+  font-weight: 700;
+  font-stretch: normal;
+  line-height: 36rpx;
+  letter-spacing: 0rpx;
+  color: #333;
+  text-align: center;
+}
+
+.register-success .state .tips {
+  margin: 38rpx auto 0;
+  width: 510rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 36rpx;
+  letter-spacing: 0rpx;
+  color: #999;
+}
+
+/* 信息 */
+
+.register-success .msg {
+  padding: 50rpx 0;
+}
+
+.register-success .msg .msg-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 72rpx;
+  letter-spacing: 0rpx;
+  color: #999;
+}
+
+.register-success .msg .msg-item .text {
+  padding-left: 40rpx;
+  color: #333;
+}
+
+.register-success .msg .msg-item .time {
+  padding-left: 40rpx;
+  color: #ff9b24;
+}
+
+/*按钮*/
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 90rpx 0;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+
+.btn button {
+  margin: 0;
+  padding: 0;
+  width: 288rpx;
+  height: 82rpx;
+  border: none;
+  border-radius: 41rpx;
+  background-image: linear-gradient(-90deg, #3a6fff 0%, #52a3ff 100%);
+  box-shadow: 0rpx 3rpx 24rpx 0rpx rgba(59, 114, 255, 0.36);
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 82rpx;
+  letter-spacing: 0rpx;
+  color: #fff;
+}
+
+.btn button::after {
+  border: none;
+}
+
+.btn button:first-child {
+  margin-right: 28rpx;
+  background-color: #fff;
+  background-image: none;
+  box-shadow: 0rpx 3rpx 16rpx 0rpx rgba(197, 197, 197, 0.2);
+  color: #333;
+}
+
+/* 提醒 */
+.register-success .remind{
+  font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 1rpx;
+	color: #999;
+}
+.register-success .remind view{
+  margin-top: 20rpx;
+}
