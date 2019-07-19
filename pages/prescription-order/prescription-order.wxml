@@ -1,0 +1,80 @@
+<!-- 处方订单 -->
+<view class="prescription-order">
+  <!-- 订单顶部 -->
+  <view class="order-title">
+    <navigator hover-class="no" url="">挂号订单</navigator>
+    <navigator hover-class="no" url="../graphic-order/graphic-order">图文订单</navigator>
+    <navigator hover-class="no" url="">电话订单</navigator>
+    <navigator hover-class="no" class="active" url="">处方订单</navigator>
+  </view>
+  <!-- 订单顶部 -->
+    <!-- 电话订单列表 -->
+  <view class="order-list">
+    <view class="order-list-content">
+      <view class="tips">最近30天挂号订单</view>
+      <!-- 搜索 -->
+      <view class="order-search">
+        <input placeholder="患者名称" style="background-image:url(../../images/icon-search.png)"/>
+        <!-- 下拉 -->
+        <view class="dropdown">
+          <view bindtap="dropdown" class="dropdown-btn">全部</view>
+          <view hidden="{{dropdownFlag}}" class="dropdown-list">
+            <view bindtap="dropdown">待确认</view>
+            <view bindtap="dropdown">待付款</view>
+            <view bindtap="dropdown">待收货</view>
+            <view bindtap="dropdown">审方中</view>
+            <view bindtap="dropdown">待发货</view>
+          </view>
+        </view>
+        <!-- 下拉 -->
+      </view>
+      <!-- 搜索 -->
+      <view class="order-list-details" style="height:{{height}}rpx">
+        <view class="order-list-item">
+          <view>王德华</view>
+          <view>男</view>
+          <view>42</view>
+          <view>2019.06.24  17:28:30</view>
+          <view class="btn1">待发货</view>
+        </view>
+        <view class="order-list-item">
+          <view>王德华</view>
+          <view>男</view>
+          <view>42</view>
+          <view>2019.06.24  17:28:30</view>
+          <view class="btn2">审方中</view>
+        </view>
+        <view class="order-list-item">
+          <view>王德华</view>
+          <view>男</view>
+          <view>42</view>
+          <view>2019.06.24  17:28:30</view>
+          <view class="btn3">待确认</view>
+        </view>
+        <view class="order-list-item">
+          <view>王德华</view>
+          <view>男</view>
+          <view>42</view>
+          <view>2019.06.24  17:28:30</view>
+          <view class="btn4">待付款</view>
+        </view>
+        <view class="order-list-item">
+          <view>王德华</view>
+          <view>男</view>
+          <view>42</view>
+          <view>2019.06.24  17:28:30</view>
+          <view class="btn5">待收货</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 电话订单列表 -->
+  <!-- 加载全部按钮 -->
+  <view class="more" hidden="{{flag}}">
+    <view bindtap="expendAll">
+      <text class="left-arrow">加载全部</text>
+    </view>
+  </view>
+  <!-- 加载全部按钮 -->
+</view>
+<!-- 处方订单 -->

@@ -1,0 +1,106 @@
+<!-- 确认挂号 -->
+<view class="confirm-register">
+  <form>
+    <!-- 挂号医院信息 -->
+    <view class="hospital-msg">
+      <view class="msg-item">
+        <view>挂号医院</view>
+        <view>重庆医科大学附属第一医院</view>
+      </view>
+      <view class="msg-item">
+        <view>就诊科室</view>
+        <view>精神科</view>
+      </view>
+      <view class="msg-item">
+        <view>门诊时间</view>
+        <view class="time">2019.06.24 上午(9:00~9:30）</view>
+      </view>
+      <view class="msg-item">
+        <view>预约医生</view>
+        <view>林朝胜</view>
+      </view>
+      <view class="msg-item">
+        <view>医生级别</view>
+        <view>普通</view>
+      </view>
+    </view>
+    <!-- 挂号医院信息 -->
+    <!-- 就诊人信息及价格 -->
+    <view class="patient-msg">
+      <view data-index="1" bindtap="openAddPatient" class="msg-item1 border-top">
+        <view>就诊人</view>
+        <view class="left-arrow">{{index1==null ? '选择就诊人':array1[index1]}}</view>
+      </view>
+      <view class="msg-item mt-30">
+        <view>身份证号</view>
+        <view>500113199001010000</view>
+      </view>
+      <view class="msg-item">
+        <view>联系电话</view>
+        <view>15023300000</view>
+      </view>
+      <view class="msg-item mb-30">
+        <view>联系地址</view>
+        <view>重庆市巴南区鱼洞</view>
+      </view>
+      <view data-index="2" bindtap="openAddPatient" class="msg-item1 border-top">
+        <view>就诊卡</view>
+        <view class="left-arrow">{{index2==null ? '选择就诊卡/医保卡':array2[index2]}}</view>
+      </view>
+      <view class="msg-item1">
+        <view>收费</view>
+        <view class="price">15.00元</view>
+      </view>
+      <view class="msg-item1">
+        <view>信息服务费</view>
+        <view>0.00元</view>
+      </view>
+      <view class="guarantee">
+        <view class="guarantee-title">预约保障费：
+          <text>2.00元</text>
+        </view>
+        <view class="guarantee-tips">停诊即可获得赔偿，查看
+          <text>《服务说明及条款》</text>
+          <text>《保险公示》</text>
+        </view>
+      </view>
+    </view>
+    <!-- 就诊人信息及价格 -->
+    <!-- 协议 -->
+    <view class="agreement">
+      <checkbox-group bindchange="checkboxChange">
+        <label>
+          <checkbox></checkbox>
+          我已经阅读
+          <text>《挂号须知》</text>
+        </label>
+      </checkbox-group>
+    </view>
+    <!-- 协议 -->
+    <!-- 支付按钮 -->
+    <button bindtap="msgPopup" class="btn-pay">在线支付（17.00元）</button>
+    <!-- 支付按钮 -->
+  </form>
+</view>
+<!-- 确认挂号 -->
+<!-- 添加就诊人 -->
+<view class="add-patient" hidden="{{addFlag}}">
+  <view class="add-patient-content">
+    <view class="title">
+      <button data-index="{{index}}" bindtap="closeAddPatient" class="cancel-btn">取消</button>
+      <text>请选择</text>
+      <button bindtap="sureAddPatient" class="sure-btn">确定</button>
+    </view>
+    <picker-view data-index="{{popupIndex}}" indicator-style="height: 40px;" style="width: 100%; height: 200px;background-color:#fff" value="{{value}}" bindchange="bindChange">
+      <picker-view-column wx:if="{{popupIndex == 1}}">
+        <view wx:for="{{array1}}" wx:key="{{index}}" style="line-height: 40px;text-align:center">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column wx:else>
+        <view wx:for="{{array2}}" wx:key="{{index}}" style="line-height: 40px;text-align:center">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+    <navigator wx:if="{{popupIndex == 1}}">添加新就诊人</navigator>
+    <navigator wx:else>添加新就诊卡</navigator>
+  </view>
+</view>
+<!-- 添加就诊人 -->

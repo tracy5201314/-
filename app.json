@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/prescription-order/prescription-order",
+    "pages/confirm-register/confirm-register",
     "pages/registered-order/registered-order",
-    "pages/registered-order-details/registered-order-details",    
+    "pages/registered-order-details/registered-order-details",
     "pages/registered-successfully/registered-successfully",
     "pages/consult-doctor/consult-doctor",
     "pages/service-purchase-success/service-purchase-success",
