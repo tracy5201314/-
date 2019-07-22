@@ -30,35 +30,35 @@
       </view>
       <!-- 搜索 -->
       <view class="order-list-details" style="height:{{height}}rpx">
-        <view class="order-list-item">
+        <view data-index="5" class="order-list-item" bindtap="jumpPagesDtails">
           <view>王德华</view>
           <view>男</view>
           <view>42</view>
           <view>2019.06.24  17:28:30</view>
           <view class="btn1">待发货</view>
         </view>
-        <view class="order-list-item">
+        <view data-index="4" class="order-list-item" bindtap="jumpPagesDtails">
           <view>王德华</view>
           <view>男</view>
           <view>42</view>
           <view>2019.06.24  17:28:30</view>
           <view class="btn2">审方中</view>
         </view>
-        <view class="order-list-item">
+        <view data-index="1" class="order-list-item" bindtap="jumpPagesDtails">
           <view>王德华</view>
           <view>男</view>
           <view>42</view>
           <view>2019.06.24  17:28:30</view>
           <view class="btn3">待确认</view>
         </view>
-        <view class="order-list-item">
+        <view data-index="2" class="order-list-item" bindtap="jumpPagesDtails">
           <view>王德华</view>
           <view>男</view>
           <view>42</view>
           <view>2019.06.24  17:28:30</view>
           <view class="btn4">待付款</view>
         </view>
-        <view class="order-list-item">
+        <view data-index="3" class="order-list-item" bindtap="jumpPagesDtails">
           <view>王德华</view>
           <view>男</view>
           <view>42</view>

@@ -1,0 +1,13 @@
+<!-- 处方提交成功 -->
+<view class="success">
+  <image src="../../images/pay-success.png" />
+  <view class="text">处方已确认，等待药师审核！</view>
+  <view class="tips">注：您可以在“个人中心”-“问诊订单”中查看相关订单信息及咨询。</view>
+  <!-- 按钮 -->
+  <view class="btn">
+    <button>返回首页</button>
+    <button>查看订单</button>
+  </view>
+  <!-- 按钮 -->
+</view>
+<!-- 处方提交成功 -->

@@ -1,0 +1,97 @@
+<!-- 确认处方订单 -->
+<view class="confirm-prescription-orders">
+  <!-- tab-title -->
+  <view class="tab-title">
+    <view 
+      wx:for="{{['配送到家','到店自提（不支持）']}}" 
+      data-index="{{index}}" 
+      bindtap="toggleTab"
+      class="{{activeIndex == index ? 'active':''}}"
+      wx:key="id"
+    >{{item}}</view>
+  </view>
+  <!-- tab-title -->
+  <!-- 详情 -->
+  <view class="details">
+    <!-- 详细信息 -->
+    <view class="details-msg">
+      <!-- 收货人信息 -->
+      <view  bindtap="getLocation" wx:if='{{activeIndex == 0}}' class="consignee-msg left-arrow">
+        <view class="item-msg-normal">
+          <view>收货人</view>
+          <view>王晓晓 1858525754</view>
+        </view>
+        <view class="item-msg-normal">
+          <view>收货地址 </view>
+          <view>重庆市九龙坡区石桥铺科园一路166号火炬大厦2号楼15楼</view>
+        </view>
+      </view>
+      <view wx:else class="consignee-msg">
+        <view bindtap="getLocation" class="consignes-msg-details left-arrow">
+          <view class="item-msg-normal">
+            <view>收货人</view>
+            <view>王晓晓 1858525754</view>
+          </view>
+          <view class="item-msg-normal">
+            <view>收货地址 </view>
+            <view>科园一路鑫斛药妆</view>
+          </view>
+        </view>
+        <view class="store-msg-details">
+          <view>重庆市九龙坡科园一路23号（火炬大厦斜对面）。</view>
+          <view>联系电话：15023300000</view>
+          <view>可提货时间：08:00-22:00</view>
+        </view>
+      </view>
+      <!-- 收货人信息 -->
+      <!-- 药品信息 -->
+      <view class="drug-msg">
+        <view class="item-msg-justify-align">
+          <view>鸿羽 奥美拉唑肠溶胶囊 20mg*21粒/盒</view>
+          <view>x1</view>
+        </view>
+        <view class="item-msg-justify-align">
+          <view>鸿羽 奥美拉唑肠溶胶囊 20mg*21粒/盒</view>
+          <view>x2</view>
+        </view>
+      </view>
+      <!-- 药品信息 -->
+      <!-- 支付信息 -->
+      <view class="pay-msg">
+        <view class="item-msg-justify-align">
+          <view>药品费用</view>
+          <view>￥138.00</view>
+        </view>
+        <view class="item-msg-justify-align">
+          <view>运费</view>
+          <view>包邮</view>
+        </view>
+        <view class="item-msg-justify-align">
+          <view>合计</view>
+          <view>￥138.00</view>
+        </view>
+        <view class="item-msg-justify-align">
+          <view>支付方式</view>
+          <radio-group>
+            <label>
+              <radio color="#1e7df7" value="在线支付" checked="true" />在线支付</label>
+            <label>
+              <radio color="#1e7df7" value="药到付款" checked="" />药到付款</label>
+          </radio-group>
+        </view>
+      </view>
+      <!-- 支付信息 -->
+    </view>
+    <!-- 详细信息 -->
+    <!-- 提示 -->
+    <view class="tips">为保证患者用药安全，药品一经售出，订单不支持取消，如有特殊情况可拨打客服热线4008-115-160 进行咨询。</view>
+    <!-- 提示 -->
+    <!-- 按钮 -->
+    <view class="btn">
+      <button>提交订单</button>
+    </view>
+    <!-- 按钮 -->
+  </view>
+  <!-- 详情 -->
+</view>
+<!-- 确认处方订单 -->

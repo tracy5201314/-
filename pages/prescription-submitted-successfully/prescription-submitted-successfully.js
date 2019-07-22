@@ -1,13 +1,11 @@
-// pages/prescription-order/prescription-order.js
+// pages/prescription-submitted-successfully/prescription-submitted-successfully.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    height: 500,
-    flag: false,
-    dropdownFlag:true
+
   },
 
   /**
@@ -64,37 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  /**
-   * dropdown
-  */
-  dropdown:function(){
-    this.setData({
-      dropdownFlag:!this.data.dropdownFlag
-    })
-  },
-  /**
-   * 展开全部
-   */
-  expendAll: function () {
-    this.setData({
-      height: 'auto',
-      flag: true
-    })
-  },
-  /**
-   * 跳转详情通过不同的url显示不同的内容
-   *  1 待确认
-   *  2 待付款
-   *  3 待收货
-   *  4 审方中
-   *  5 待发货
-  */
-  jumpPagesDtails:function(e){
-    let sateNum = e.currentTarget.dataset.index;
-    let url = "../../pages/prescription-order-details/prescription-order-details?stateCode=" + sateNum;
-    wx.navigateTo({
-      url: url,
-    })
   }
 })

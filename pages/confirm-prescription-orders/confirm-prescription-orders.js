@@ -1,13 +1,12 @@
-// pages/prescription-order/prescription-order.js
+// pages/confirm-prescription-orders/confirm-prescription-orders.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    height: 500,
-    flag: false,
-    dropdownFlag:true
+    flag:true,
+    activeIndex:0
   },
 
   /**
@@ -65,36 +64,32 @@ Page({
   onShareAppMessage: function () {
 
   },
-  /**
-   * dropdown
-  */
-  dropdown:function(){
+  toggleTab:function(e){
     this.setData({
-      dropdownFlag:!this.data.dropdownFlag
+      activeIndex:e.currentTarget.dataset.index
     })
   },
-  /**
-   * 展开全部
-   */
-  expendAll: function () {
-    this.setData({
-      height: 'auto',
-      flag: true
-    })
-  },
-  /**
-   * 跳转详情通过不同的url显示不同的内容
-   *  1 待确认
-   *  2 待付款
-   *  3 待收货
-   *  4 审方中
-   *  5 待发货
-  */
-  jumpPagesDtails:function(e){
-    let sateNum = e.currentTarget.dataset.index;
-    let url = "../../pages/prescription-order-details/prescription-order-details?stateCode=" + sateNum;
-    wx.navigateTo({
-      url: url,
+  //获取地址
+  getLocation:function(){
+    wx.showModal({
+      title: '提示',
+      content: '医事通想获取您当前的位置？',
+      cancelText:'不允许',
+      confirmText:'好',
+      confirmColor:'#1e7df7',
+      success(res){
+        console.log(res)
+        if(res.confirm){
+          wx.getLocation({
+            type: 'wgs84',
+            altitude: true,
+            success: function(res) {
+              console.log(res)
+            },
+          })
+        }
+      }
     })
   }
+
 })

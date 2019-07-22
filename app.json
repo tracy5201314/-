@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/confirm-prescription-orders/confirm-prescription-orders",
+    "pages/prescription-submitted-successfully/prescription-submitted-successfully",
     "pages/prescription-order/prescription-order",
+    "pages/prescription-order-details/prescription-order-details",
     "pages/confirm-register/confirm-register",
     "pages/registered-order/registered-order",
     "pages/registered-order-details/registered-order-details",
@@ -40,7 +43,8 @@
     "pages/cf-order/logistics/logistics",
     "pages/cf-order/store-choice/store-choice",
     "pages/logs/logs",
-    "pages/make-an-appointment/make-an-appointment"    
+    "pages/make-an-appointment/make-an-appointment"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -74,5 +78,10 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "医事通想获取您当前的位置？"
+    }
+  }
 }

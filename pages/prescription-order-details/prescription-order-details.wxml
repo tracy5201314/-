@@ -1,0 +1,150 @@
+<!-- 医生处方笺 -->
+<view class="prescriptio-order-details">
+  <!-- 状态 -->
+  <view class="state {{state > 4 ? 'state-h2':'state-h1'}}">
+    <view class="state-text">{{stateText}}</view>
+    <view class="state-tips">{{stateTips}}</view>
+    <!-- 通过不同状态判断显示不同的按钮 -->
+    <view wx:if='{{state==1}}' class="state-btn">
+      <button class="btn-state1">确认订单</button>
+    </view>
+    <view wx:elif='{{state==2}}' class="state-btn">
+      <button class="btn-state2">取消订单</button>
+      <button class="btn-state1 ml-30">去支付</button>
+    </view>
+    <view wx:elif='{{state==3}}' class="state-btn">
+      <button class="btn-state2">查看物流</button>
+    </view>
+    <view wx:elif='{{state==4}}' class="state-btn">
+      <button class="btn-state2">取消订单</button>
+    </view>
+    <view wx:else class="state-btn">
+
+    </view>
+    <!-- 通过不同状态判断显示不同的按钮 -->
+  </view>
+  <!-- 状态 -->
+  <!-- 详情 -->
+  <view class="details">
+    <!-- 收货信息 -->
+    <view class="receiving-goods-msg" hidden="{{state != 2}}">
+      <view class="item-title">收货信息</view>
+      <view class="item-row">
+        <view class="">收货人</view>
+        <view class="">王晓晓   15023392569</view>
+      </view>
+      <view class="item-row">
+        <view class="">收货地址</view>
+        <view class="">重庆市九龙坡区石桥铺科园一路166号火炬大厦2号楼15楼</view>
+      </view>
+    </view>
+    <!-- 收货信息 -->
+    <!-- 待收货信息 -->
+    <view class="receiving-goods-msg" hidden="{{flag}}">
+      <view class="item-title">自提信息</view>
+      <view class="item-row">
+        <view class="">收货人</view>
+        <view class="">王晓晓   15023392569</view>
+      </view>
+      <view class="item-row">
+        <view class="">收货地址</view>
+        <view class="">重庆市九龙坡区石桥铺科园一路166号火炬大厦2号楼15楼 \n联系电话：15023300000 \n可提货时间：08:00-22:00</view>
+      </view>
+    </view>
+    <!-- 待收货信息 -->
+    <!-- 患者信息 -->
+    <view class="details-patient-msg">
+      <view class="item-row">
+        <view class="">王德华</view>
+        <view class="">男 25</view>
+      </view>
+      <view class="item-row">
+        <view>订单号</view>
+        <view>254456684364</view>
+      </view>
+      <view class="item-row">
+        <view>开方时间</view>
+        <view>2019.06.24</view>
+      </view>
+      <view class="item-row">
+        <view>诊断信息</view>
+        <view>流行感冒、宫颈糜烂、肾结石、糖尿病、乙肝、尿毒症</view>
+      </view>
+    </view>
+    <!-- 患者信息 -->
+    <!-- 处方信息 -->
+    <view class="details-prescription-msg">
+      <!-- 药品 -->
+      <view class="drug">
+        <view class="item-title">处方药品</view>
+        <view class="item-column mt-0">
+          <view>
+            <text>鸿羽  奥美拉唑肠溶胶囊  20mg*21粒/盒</text>
+            <text>x2</text>
+          </view>
+          <view>用法：每日1次/1粒； 用法：早晚口服； 周期：3天</view>
+        </view>
+        <view class="item-column">
+          <view>
+            <text>鸿羽  奥美拉唑肠溶胶囊  20mg*21粒/盒</text>
+            <text>x2</text>
+          </view>
+          <view>用法：每日1次/1粒； 用法：早晚口服； 周期：3天</view>
+        </view>
+        <view class="item-column">
+          <view>
+            <text>鸿羽  奥美拉唑肠溶胶囊  20mg*21粒/盒</text>
+            <text>x2</text>
+          </view>
+          <view>用法：每日1次/1粒； 用法：早晚口服； 周期：3天</view>
+        </view>
+      </view>
+      <!-- 药品 -->
+      <!-- 其他 -->
+      <view class="other">
+        <view class="item-row">
+          <view>药品费用</view>
+          <view class="price">￥138.00</view>
+        </view>
+        <view class="item-row">
+          <view>医生签名</view>
+          <view>邓椿林</view>
+        </view>
+        <view class="item-row">
+          <view>药师签名</view>
+          <view>王晓晓</view>
+        </view>
+        <view class="item-row">
+          <view>取货方式</view>
+          <view>送货上门</view>
+        </view>
+        <view class="item-row">
+          <view>支付方式</view>
+          <view>在线支付</view>
+        </view>
+      </view>
+      <!-- 其他 -->
+    </view>
+    <!-- 处方信息 -->
+  </view>
+  <!-- 详情 -->
+  <!-- 通过不同状态判断显示不同的按钮 -->
+  <view wx:if='{{state==1}}' class="btn">
+    <button class="btn1">确认订单</button>
+  </view>
+  <view wx:elif='{{state==2}}' class="btn btn-row">
+    <button class="btn2 btn-kh">取消订单</button>
+    <button class="btn1 btn-kh ml-30">去支付</button>
+  </view>
+  <view wx:elif='{{state==3}}' class="btn">
+    <button class="btn2">查看物流</button>
+  </view>
+  <view wx:elif='{{state==4}}' class="btn">
+    <button class="btn2">取消订单</button>
+  </view>
+  <view wx:else class="btn">
+
+  </view>
+  <!-- 通过不同状态判断显示不同的按钮 -->
+</view>
+<!-- 医生处方笺 -->
