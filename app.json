@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/confirm-prescription-orders/confirm-prescription-orders",
     "pages/prescription-submitted-successfully/prescription-submitted-successfully",
     "pages/prescription-order/prescription-order",
@@ -10,8 +11,7 @@
     "pages/registered-successfully/registered-successfully",
     "pages/consult-doctor/consult-doctor",
     "pages/service-purchase-success/service-purchase-success",
-    "pages/telephone-consultation-details/telephone-consultation-details",
-    "pages/index/index",
+    "pages/telephone-consultation-details/telephone-consultation-details",    
     "pages/telephone-consultation/telephone-consultation",
     "pages/telephone-orders/telephone-orders",
     "pages/graphic-order/graphic-order",
